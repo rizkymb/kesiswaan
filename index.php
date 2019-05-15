@@ -30,7 +30,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">New Project</a></li>
+                      <li><a href="#">Rekap Santri</a></li>
                       <li><a href="#">Existing Project</a></li>
                       <li><a href="#">Statistic</a></li>
                       <li><a href="#">Reminder Setting</a></li>
