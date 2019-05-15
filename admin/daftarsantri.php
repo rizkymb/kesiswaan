@@ -478,6 +478,435 @@
 </form>
 
   </div>
+  <div class="panel-heading">Form Data Orang Tua Santri : Ibu</div>
+  <div class="panel-body">
+  <form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="namalengkapibu">Nama Lengkap</label>  
+  <div class="col-md-4">
+  <input id="namalengkapibu" name="namalengkapibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tempatlahiribu">Tempat Lahir</label>  
+  <div class="col-md-4">
+  <input id="tempatlahiribu" name="tempatlahiribu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="usiaibu">Usia</label>  
+  <div class="col-md-4">
+  <input id="usiaibu" name="usiaibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pekerjaanibu">Pekerjaan</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="pekerjaanibu-0">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-0" value="1" checked="checked">
+      Ibu Rumah Tangga
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-1">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-1" value="2">
+      Wiraswasta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-2">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-2" value="3">
+      Pegawai Swasta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-3">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-3" value="4">
+      Pedagang / Buruh
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-4">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-4" value="5">
+      Guru / Mubaligh
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-5">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-5" value="6">
+      PNS / TNI / Polri
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-6">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-6" value="7">
+      Pensiunan
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanibu-7">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-7" value="8">
+      Lainnya
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="penghasilanayah">Penghasilan Bulanan</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="penghasilanayah-0">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1" checked="checked">
+      1 - 3 Juta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="penghasilanayah-1">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="2">
+      3 - 5 Juta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="penghasilanayah-2">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="3">
+      DI Atas 5 Juta
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="namajalanibu">Alamat Rumah</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="namajalanibu" name="namajalanibu"></textarea>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rtibu">RT</label>  
+  <div class="col-md-1">
+  <input id="rtibu" name="rtibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rwibu">RW</label>  
+  <div class="col-md-1">
+  <input id="rwibu" name="rwibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="desaibu">Kelurahan / Desa</label>  
+  <div class="col-md-4">
+  <input id="desaibu" name="desaibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kecamatanibu">Kecamatan</label>  
+  <div class="col-md-4">
+  <input id="kecamatanibu" name="kecamatanibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kabupatenibu">Kabupaten</label>  
+  <div class="col-md-4">
+  <input id="kabupatenibu" name="kabupatenibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="provinsiibu">Provinsi</label>  
+  <div class="col-md-4">
+  <input id="provinsiibu" name="provinsiibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notelpibu">No. Telepon</label>  
+  <div class="col-md-4">
+  <input id="notelpibu" name="notelpibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nowhatsappibu">No. Whatsapp</label>  
+  <div class="col-md-4">
+  <input id="nowhatsappibu" name="nowhatsappibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailibu">Email</label>  
+  <div class="col-md-4">
+  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+  </div>
+
+  <div class="panel-heading">Form Data Orang Tua Santri : Wali</div>
+  <div class="panel-body">
+  <form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="namalengkapwali">Nama Lengkap</label>  
+  <div class="col-md-4">
+  <input id="namalengkapwali" name="namalengkapwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tempatlahirwali">Tempat Lahir</label>  
+  <div class="col-md-4">
+  <input id="tempatlahirwali" name="tempatlahirwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="usiawali">Usia</label>  
+  <div class="col-md-4">
+  <input id="usiawali" name="usiawali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pekerjaanwali">Pekerjaan</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="pekerjaanwali-0">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-0" value="1" checked="checked">
+      Ibu Rumah Tangga
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-1">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-1" value="2">
+      Wiraswasta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-2">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-2" value="3">
+      Pegawai Swasta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-3">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-3" value="4">
+      Pedagang / Buruh
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-4">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-4" value="5">
+      Guru / Mubaligh
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-5">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-5" value="6">
+      PNS / TNI / Polri
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-6">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-6" value="7">
+      Pensiunan
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanwali-7">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-7" value="8">
+      Lainnya
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="penghasilanwali">Penghasilan Bulanan</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="penghasilanwali-0">
+      <input type="radio" name="penghasilanwali" id="penghasilanwali-0" value="1" checked="checked">
+      1 - 3 Juta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="penghasilanwali-1">
+      <input type="radio" name="penghasilanwali" id="penghasilanwali-1" value="2">
+      3 - 5 Juta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="penghasilanwali-2">
+      <input type="radio" name="penghasilanwali" id="penghasilanwali-2" value="3">
+      DI Atas 5 Juta
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="namajalanwali">Alamat Rumah</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="namajalanwali" name="namajalanwali"></textarea>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rtwali">RT</label>  
+  <div class="col-md-1">
+  <input id="rtwali" name="rtwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rwwali">RW</label>  
+  <div class="col-md-1">
+  <input id="rwwali" name="rwwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="desawali">Kelurahan / Desa</label>  
+  <div class="col-md-4">
+  <input id="desawali" name="desawali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kecamatanwali">Kecamatan</label>  
+  <div class="col-md-4">
+  <input id="kecamatanwali" name="kecamatanwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notelpwali">No. Telepon</label>  
+  <div class="col-md-4">
+  <input id="notelpwali" name="notelpwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nowhatsappwali">No. Whatsapp</label>  
+  <div class="col-md-4">
+  <input id="nowhatsappwali" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kabupatenwali">Kabupaten</label>  
+  <div class="col-md-4">
+  <input id="kabupatenwali" name="kabupatenwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="provinsiwali">Provinsi</label>  
+  <div class="col-md-4">
+  <input id="provinsiwali" name="provinsiwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notelpibu">No. Telepon</label>  
+  <div class="col-md-4">
+  <input id="notelpibu" name="notelpwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nowhatsappibu">No. Whatsapp</label>  
+  <div class="col-md-4">
+  <input id="nowhatsappibu" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailibu">Email</label>  
+  <div class="col-md-4">
+  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+  </div>
 </div>
 
 <div class="panel panel-default">
