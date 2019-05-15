@@ -30,8 +30,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="daftarsantri.php">Input Data Santri</a></li>
-                      <li><a href="#">Existing Project</a></li>
+                      <li><a href="index.php?m=inputdata">Input Data Santri</a></li>
                       <li><a href="#">Statistic</a></li>
                       <li><a href="#">Reminder Setting</a></li>
                       <li role="separator" class="divider"></li>
@@ -61,7 +60,19 @@
         </nav>
 
     <div class="container">
+      <?php
+      $m = $_GET['m'];
 
+      if ($m=='') {
+        echo "menu";
+      }elseif ($m=='inputdata') {
+        include 'daftarsantri.php';
+      }elseif ($m=='regdetail') {
+        include 'registrasi_detail.php';
+      }else {
+        include 'home.php';
+      }
+      ?>
     </div>
 </body>
 </html>

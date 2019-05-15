@@ -12,7 +12,10 @@
     <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
 </head>
 <body>
-    <form class="form-horizontal">
+<div class="panel panel-success">
+  <div class="panel-heading">Form Data Santri</div>
+  <div class="panel-body">
+  <form class="form-horizontal">
     <fieldset>
 
     <!-- Text input-->
@@ -269,5 +272,242 @@
 
     </fieldset>
     </form>
+  </div>
+  <div class="panel-heading">Form Data Orang Tua Santri : Ayah</div>
+  <div class="panel-body">
+  <form class="form-horizontal">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="namalengkapayah">Nama Lengkap</label>  
+  <div class="col-md-4">
+  <input id="namalengkapayah" name="namalengkapayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tempatlahirayah">Tempat Lahir</label>  
+  <div class="col-md-4">
+  <input id="tempatlahirayah" name="tempatlahirayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="usiaayah">Usia</label>  
+  <div class="col-md-4">
+  <input id="usiaayah" name="usiaayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="pekerjaanayah">Pekerjaan</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="pekerjaanayah-0">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-0" value="1" checked="checked">
+      Wiraswasta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-1">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-1" value="2">
+      Pegawai Swasta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-2">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-2" value="3">
+      Pedagang / Buruh
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-3">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-3" value="4">
+      Guru / Mubaligh
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-4">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-4" value="5">
+      PNS
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-5">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-5" value="6">
+      TNI / Polri
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-6">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-6" value="7">
+      Pensiunan
+    </label>
+	</div>
+  <div class="radio">
+    <label for="pekerjaanayah-7">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-7" value="8">
+      Lainnya
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="penghasilanayah">Penghasilan Bulanan</label>
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="penghasilanayah-0">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1" checked="checked">
+      1 - 3 Juta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="penghasilanayah-1">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="2">
+      3 - 5 Juta
+    </label>
+	</div>
+  <div class="radio">
+    <label for="penghasilanayah-2">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="3">
+      DI Atas 5 Juta
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="namajalanayah">Alamat Rumah</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="namajalanayah" name="namajalanayah"></textarea>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rtayah">RT</label>  
+  <div class="col-md-1">
+  <input id="rtayah" name="rtayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="rwayah">RW</label>  
+  <div class="col-md-1">
+  <input id="rwayah" name="rwayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="desaayah">Kelurahan / Desa</label>  
+  <div class="col-md-4">
+  <input id="desaayah" name="desaayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kecamatanayah">Kecamatan</label>  
+  <div class="col-md-4">
+  <input id="kecamatanayah" name="kecamatanayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="kabupatenayah">Kabupaten</label>  
+  <div class="col-md-4">
+  <input id="kabupatenayah" name="kabupatenayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="provinsiayah">Provinsi</label>  
+  <div class="col-md-4">
+  <input id="provinsiayah" name="provinsiayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="notelpayah">No. Telepon</label>  
+  <div class="col-md-4">
+  <input id="notelpayah" name="notelpayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="nowhatsappayah">No. Whatsapp</label>  
+  <div class="col-md-4">
+  <input id="nowhatsappayah" name="nowhatsappayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailayah">Email</label>  
+  <div class="col-md-4">
+  <input id="emailayah" name="emailayah" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <!-- Table -->
+  <table class="table">
+    <tr>
+        <td>Name</td>
+        <td>Address</td>
+        <td>Age</td>
+    </tr>
+    <tr>
+        <td>Shao Kahn</td>
+        <td>Outworld</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Shao Kahn</td>
+        <td>Outworld</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Shao Kahn</td>
+        <td>Outworld</td>
+        <td>100</td>
+    </tr>
+  </table>
+  </div>
+</div>
 </body>
 </html>
