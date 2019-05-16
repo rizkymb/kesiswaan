@@ -6,7 +6,7 @@
 <div class="panel panel-success">
   <div class="panel-heading">Form Data Santri</div>
   <div class="panel-body">
-  <form class="form-horizontal" action="#">
+  <form class="form-horizontal" method="post" action="proses_inputsantri.php">
     <fieldset>
 
     <!-- Text input-->
@@ -47,7 +47,7 @@
     <label class="col-md-4 control-label" for="tempatlahir">Tempat / Tanggal Lahir</label>  
     <div class="col-md-4">
     <input id="tempatlahir" name="tempatlahir" type="text" placeholder="" class="form-control input-md" required="">
-        
+    <input id="tgllahir" name="tgllahir" type="date" placeholder="" class="form-control input-md" required="">        
     </div>
     </div>
 
@@ -120,21 +120,6 @@
         <label class="radio-inline" for="kebutuhankhusus-8">
         <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
         Lainnya
-        </label>
-    </div>
-    </div>
-
-    <!-- Multiple Radios (inline) -->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="mondok">Pernah Mondok Di Pesantren</label>
-    <div class="col-md-4"> 
-        <label class="radio-inline" for="mondok-0">
-        <input type="radio" name="mondok" id="mondok-0" value="1" checked="checked">
-        Tidak
-        </label> 
-        <label class="radio-inline" for="mondok-1">
-        <input type="radio" name="mondok" id="mondok-1" value="2">
-        Ya
         </label>
     </div>
     </div>

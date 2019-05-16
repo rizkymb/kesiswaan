@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Bulan Mei 2019 pada 03.37
--- Versi server: 10.1.37-MariaDB
--- Versi PHP: 7.2.13
+-- Generation Time: May 16, 2019 at 09:28 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbayah`
+-- Table structure for table `tbayah`
 --
 
 CREATE TABLE `tbayah` (
@@ -52,7 +52,7 @@ CREATE TABLE `tbayah` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbibu`
+-- Table structure for table `tbibu`
 --
 
 CREATE TABLE `tbibu` (
@@ -79,7 +79,7 @@ CREATE TABLE `tbibu` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbprogram`
+-- Table structure for table `tbprogram`
 --
 
 CREATE TABLE `tbprogram` (
@@ -92,10 +92,19 @@ CREATE TABLE `tbprogram` (
   `Keterangan` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tbprogram`
+--
+
+INSERT INTO `tbprogram` (`IdProgram`, `ProgramStudi`, `Juz`, `AyatPerhari`, `BulanPerjuz`, `Tahun`, `Keterangan`) VALUES
+(1, 'Paket 1', 4, 6, 3, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 4 juz dalam 1 tahun'),
+(2, 'Paket 2', 3, 5, 4, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 3 juz dalam 1 tahun'),
+(3, 'Paket 3', 2, 4, 6, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 2 juz dalam 1 tahun');
+
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbsantri`
+-- Table structure for table `tbsantri`
 --
 
 CREATE TABLE `tbsantri` (
@@ -108,8 +117,9 @@ CREATE TABLE `tbsantri` (
   `AnakKe` varchar(5) NOT NULL,
   `Bahasa` varchar(40) NOT NULL,
   `KebutuhanKhusus` int(11) NOT NULL,
-  `Mondok` int(11) NOT NULL,
   `SekolahTerakhir` varchar(20) NOT NULL,
+  `NamaSekolah` varchar(50) NOT NULL,
+  `AlamatSekolah` text NOT NULL,
   `TinggalDengan` varchar(30) NOT NULL,
   `NomorKK` varchar(50) NOT NULL,
   `NamaJalan` text NOT NULL,
@@ -125,7 +135,7 @@ CREATE TABLE `tbsantri` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbuser`
+-- Table structure for table `tbuser`
 --
 
 CREATE TABLE `tbuser` (
@@ -140,7 +150,7 @@ CREATE TABLE `tbuser` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbwali`
+-- Table structure for table `tbwali`
 --
 
 CREATE TABLE `tbwali` (
@@ -169,65 +179,65 @@ CREATE TABLE `tbwali` (
 --
 
 --
--- Indeks untuk tabel `tbayah`
+-- Indexes for table `tbayah`
 --
 ALTER TABLE `tbayah`
   ADD PRIMARY KEY (`IdAyah`);
 
 --
--- Indeks untuk tabel `tbibu`
+-- Indexes for table `tbibu`
 --
 ALTER TABLE `tbibu`
   ADD PRIMARY KEY (`IdIbu`);
 
 --
--- Indeks untuk tabel `tbprogram`
+-- Indexes for table `tbprogram`
 --
 ALTER TABLE `tbprogram`
   ADD PRIMARY KEY (`IdProgram`);
 
 --
--- Indeks untuk tabel `tbuser`
+-- Indexes for table `tbuser`
 --
 ALTER TABLE `tbuser`
   ADD PRIMARY KEY (`IdUser`);
 
 --
--- Indeks untuk tabel `tbwali`
+-- Indexes for table `tbwali`
 --
 ALTER TABLE `tbwali`
   ADD PRIMARY KEY (`IdWali`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbayah`
+-- AUTO_INCREMENT for table `tbayah`
 --
 ALTER TABLE `tbayah`
   MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbibu`
+-- AUTO_INCREMENT for table `tbibu`
 --
 ALTER TABLE `tbibu`
   MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbprogram`
+-- AUTO_INCREMENT for table `tbprogram`
 --
 ALTER TABLE `tbprogram`
-  MODIFY `IdProgram` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdProgram` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `tbuser`
+-- AUTO_INCREMENT for table `tbuser`
 --
 ALTER TABLE `tbuser`
   MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbwali`
+-- AUTO_INCREMENT for table `tbwali`
 --
 ALTER TABLE `tbwali`
   MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT;
