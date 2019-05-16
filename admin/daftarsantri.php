@@ -11,6 +11,16 @@
 
     <!-- Text input-->
     <div class="form-group">
+    <label class="col-md-4 control-label" for="namalengkap">Pilih Paket</label>  
+    <div class="col-md-4">
+    <select class="form-control" name="pilihpaket" id="pilihpaket">
+      <option value="">Pilih Paket</option>
+    </select>
+  </div>
+</div>
+
+    <!-- Text input-->
+    <div class="form-group">
     <label class="col-md-4 control-label" for="namalengkap">Nama Lengkap</label>  
     <div class="col-md-5">
     <input id="namalengkap" name="namalengkap" type="text" placeholder="" class="form-control input-md" required="">
