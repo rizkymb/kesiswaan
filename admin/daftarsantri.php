@@ -2,10 +2,11 @@
 <head>
 </head>
 <body>
+
 <div class="panel panel-success">
   <div class="panel-heading">Form Data Santri</div>
   <div class="panel-body">
-  <form class="form-horizontal">
+  <form class="form-horizontal" action="#">
     <fieldset>
 
     <!-- Text input-->
@@ -55,7 +56,9 @@
     <label class="col-md-4 control-label" for="anakke">Anak Ke</label>  
     <div class="col-md-1">
     <input id="anakke" name="anakke" type="text" placeholder="" class="form-control input-md" required="">
-        
+    Dari     
+    <input id="dari" name="dari" type="text" placeholder="" class="form-control input-md" required="">
+    Bersaudara
     </div>
     </div>
 
@@ -81,14 +84,42 @@
     <!-- Multiple Radios (inline) -->
     <div class="form-group">
     <label class="col-md-4 control-label" for="kebutuhankhusus">Berkebutuhan Khusus</label>
-    <div class="col-md-4"> 
+    <div class="col-md-5"> 
         <label class="radio-inline" for="kebutuhankhusus-0">
         <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-0" value="1" checked="checked">
         Tidak
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-1">
         <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
-        Ya
+        Autis
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Indigo
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-3">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Hyper Aktif
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-4">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Dhuafa
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-5">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Yatim
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-6">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Piatu
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-7">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Narkoba
+        </label> 
+        <label class="radio-inline" for="kebutuhankhusus-8">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        Lainnya
         </label>
     </div>
     </div>
@@ -105,23 +136,6 @@
         <input type="radio" name="mondok" id="mondok-1" value="2">
         Ya
         </label>
-    </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="namapesantren">Nama Pesantren</label>  
-    <div class="col-md-4">
-    <input id="namapesantren" name="namapesantren" type="text" placeholder="" class="form-control input-md" required="">
-        
-    </div>
-    </div>
-
-    <!-- Textarea -->
-    <div class="form-group">
-    <label class="col-md-4 control-label" for="alamatpesantren">Alamat Pesantren</label>
-    <div class="col-md-4">                     
-        <textarea class="form-control" id="alamatpesantren" name="alamatpesantren"></textarea>
     </div>
     </div>
 
@@ -153,6 +167,23 @@
         Lainnya
         </label>
         </div>
+    </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="nomorkk">Nama Sekolah</label>  
+    <div class="col-md-4">
+    <input id="namasekolah" name="namasekolah" type="text" placeholder="" class="form-control input-md" required="">
+        
+    </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="namajalan">Alamat Sekolah</label>
+    <div class="col-md-4">                     
+        <textarea class="form-control" id="alamatsekolah" name="alamatsekolah"></textarea>
     </div>
     </div>
 
@@ -252,17 +283,49 @@
     </div>
     </div>
 
-    <!-- Button -->
+    <!-- Multiple Radios
     <div class="form-group">
-    <label class="col-md-4 control-label" for="submit"></label>
+    <label class="col-md-4 control-label" for="penanggungjawab">Penanggung Jawab</label>
     <div class="col-md-4">
-        <button id="submit" name="submit" class="btn btn-success">Daftar</button>
+    <div class="radio-inline">
+        <label for="tinggaldengan-0">
+        <input type="radio" name="penanggungjawab" id="penanggungjawab-0" value="1" checked="checked" onclick="showortu()">
+        Orang Tua
+        </label>
+      </div>
+    <div class="radio-inline">
+        <label for="tinggaldengan-1">
+        <input type="radio" name="penanggungjawab" id="penanggungjawab-1" value="2" onclick="showwali()">
+        Wali
+        </label>
+      </div>
     </div>
-    </div>
+  </div> -->
 
-    </fieldset>
-    </form>
-  </div>
+<!-- <script>
+  var detachx = $('#formwali').detach();
+  var detachy = $('#formortu').detach();
+
+  function showortu(detachy){
+  var x = document.getElementById('formortu');
+  var y = document.getElementById('formwali');
+
+  $('#formortu').append(detachy);
+  x.style.display ='block';
+  y.parentNode.removeChild(y);
+  }
+  function showwali(detachx){
+  var x = document.getElementById('formortu');
+  var y = document.getElementById('formwali');
+
+  $('#formwali').append(detachx);
+  y.style.display ='block';
+  x.parentNode.removeChild(x);
+  }
+</script> -->
+
+<div id="forms"></div>
+<div id="formortu">
   <div class="panel-heading">Form Data Orang Tua Santri : Ayah</div>
   <div class="panel-body">
   <form class="form-horizontal">
@@ -272,7 +335,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="namalengkapayah">Nama Lengkap</label>  
   <div class="col-md-4">
-  <input id="namalengkapayah" name="namalengkapayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="namalengkapayah" name="namalengkapayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -281,7 +344,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="tempatlahirayah">Tempat Lahir</label>  
   <div class="col-md-4">
-  <input id="tempatlahirayah" name="tempatlahirayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="tempatlahirayah" name="tempatlahirayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -290,7 +353,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="usiaayah">Usia</label>  
   <div class="col-md-4">
-  <input id="usiaayah" name="usiaayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="usiaayah" name="usiaayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -387,7 +450,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="rtayah">RT</label>  
   <div class="col-md-1">
-  <input id="rtayah" name="rtayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="rtayah" name="rtayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -396,7 +459,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="rwayah">RW</label>  
   <div class="col-md-1">
-  <input id="rwayah" name="rwayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="rwayah" name="rwayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -405,7 +468,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="desaayah">Kelurahan / Desa</label>  
   <div class="col-md-4">
-  <input id="desaayah" name="desaayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="desaayah" name="desaayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -414,7 +477,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="kecamatanayah">Kecamatan</label>  
   <div class="col-md-4">
-  <input id="kecamatanayah" name="kecamatanayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="kecamatanayah" name="kecamatanayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -423,7 +486,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="kabupatenayah">Kabupaten</label>  
   <div class="col-md-4">
-  <input id="kabupatenayah" name="kabupatenayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="kabupatenayah" name="kabupatenayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -432,7 +495,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="provinsiayah">Provinsi</label>  
   <div class="col-md-4">
-  <input id="provinsiayah" name="provinsiayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="provinsiayah" name="provinsiayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -441,7 +504,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="notelpayah">No. Telepon</label>  
   <div class="col-md-4">
-  <input id="notelpayah" name="notelpayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="notelpayah" name="notelpayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -450,7 +513,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nowhatsappayah">No. Whatsapp</label>  
   <div class="col-md-4">
-  <input id="nowhatsappayah" name="nowhatsappayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="nowhatsappayah" name="nowhatsappayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -459,25 +522,23 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="emailayah">Email</label>  
   <div class="col-md-4">
-  <input id="emailayah" name="emailayah" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="emailayah" name="emailayah" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
 
 </fieldset>
-</form>
 
   </div>
   <div class="panel-heading">Form Data Orang Tua Santri : Ibu</div>
   <div class="panel-body">
-  <form class="form-horizontal">
 <fieldset>
 
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="namalengkapibu">Nama Lengkap</label>  
   <div class="col-md-4">
-  <input id="namalengkapibu" name="namalengkapibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="namalengkapibu" name="namalengkapibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -486,7 +547,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="tempatlahiribu">Tempat Lahir</label>  
   <div class="col-md-4">
-  <input id="tempatlahiribu" name="tempatlahiribu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="tempatlahiribu" name="tempatlahiribu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -495,7 +556,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="usiaibu">Usia</label>  
   <div class="col-md-4">
-  <input id="usiaibu" name="usiaibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="usiaibu" name="usiaibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -592,7 +653,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="rtibu">RT</label>  
   <div class="col-md-1">
-  <input id="rtibu" name="rtibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="rtibu" name="rtibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -601,7 +662,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="rwibu">RW</label>  
   <div class="col-md-1">
-  <input id="rwibu" name="rwibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="rwibu" name="rwibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -610,7 +671,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="desaibu">Kelurahan / Desa</label>  
   <div class="col-md-4">
-  <input id="desaibu" name="desaibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="desaibu" name="desaibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -619,7 +680,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="kecamatanibu">Kecamatan</label>  
   <div class="col-md-4">
-  <input id="kecamatanibu" name="kecamatanibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="kecamatanibu" name="kecamatanibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -628,7 +689,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="kabupatenibu">Kabupaten</label>  
   <div class="col-md-4">
-  <input id="kabupatenibu" name="kabupatenibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="kabupatenibu" name="kabupatenibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -637,7 +698,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="provinsiibu">Provinsi</label>  
   <div class="col-md-4">
-  <input id="provinsiibu" name="provinsiibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="provinsiibu" name="provinsiibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -646,7 +707,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="notelpibu">No. Telepon</label>  
   <div class="col-md-4">
-  <input id="notelpibu" name="notelpibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="notelpibu" name="notelpibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -655,7 +716,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nowhatsappibu">No. Whatsapp</label>  
   <div class="col-md-4">
-  <input id="nowhatsappibu" name="nowhatsappibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="nowhatsappibu" name="nowhatsappibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
@@ -664,20 +725,19 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="emailibu">Email</label>  
   <div class="col-md-4">
-  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md">
     
   </div>
 </div>
 
 </fieldset>
-</form>
 
   </div>
+</div>
 
+<div id="formwali" style="">
   <div class="panel-heading">Form Data Orang Tua Santri : Wali</div>
   <div class="panel-body">
-  <form class="form-horizontal">
-<fieldset>
 
 <!-- Text input-->
 <div class="form-group">
@@ -888,45 +948,21 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="emailibu">Email</label>  
   <div class="col-md-4">
-  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" required="">
-    
+  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" required="">   
   </div>
 </div>
-
+</div>
+</div>
 </fieldset>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+      <button id="submit" name="submit" class="btn btn-success">Daftar</button>
+  </div>
+</div>
 </form>
 
-  </div>
-</div>
-
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading">Panel heading</div>
-  <div class="panel-body">
-    <!-- Table -->
-  <table class="table">
-    <tr>
-        <td>Name</td>
-        <td>Address</td>
-        <td>Age</td>
-    </tr>
-    <tr>
-        <td>Shao Kahn</td>
-        <td>Outworld</td>
-        <td>100</td>
-    </tr>
-    <tr>
-        <td>Shao Kahn</td>
-        <td>Outworld</td>
-        <td>100</td>
-    </tr>
-    <tr>
-        <td>Shao Kahn</td>
-        <td>Outworld</td>
-        <td>100</td>
-    </tr>
-  </table>
-  </div>
 </div>
 </body>
 </html>

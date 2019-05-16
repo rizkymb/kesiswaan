@@ -2,7 +2,7 @@
 <div class="panel panel-success">
   <div class="panel-heading">Form Data Santri</div>
   <div class="panel-body">
-<form class="form-horizontal">
+<form class="form-horizontal" action="proses_inputprogram.php" method="post">
 <fieldset>
 
 <!-- Text input-->
@@ -18,7 +18,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="juz">Jumlah Juz</label>  
   <div class="col-md-1">
-  <input id="juz" name="juz" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="juz" name="juz" type="number" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -27,7 +27,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="ayat">Ayat Perhari</label>  
   <div class="col-md-1">
-  <input id="ayat" name="ayat" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="ayat" name="ayat" type="number" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -36,7 +36,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="bulanperjuz">Jumlah Bulan Perjuz</label>  
   <div class="col-md-1">
-  <input id="bulanperjuz" name="bulanperjuz" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="bulanperjuz" name="bulanperjuz" type="number" placeholder="" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -46,7 +46,7 @@
   <label class="col-md-4 control-label" for="tahun">Lama Program Studi</label>
   <div class="col-md-2">
     <div class="input-group">
-      <input id="tahun" name="tahun" class="form-control" value="1" type="text" required="" readonly>
+      <input id="tahun" name="tahun" class="form-control" value="1" type="number" required="" readonly>
       <span class="input-group-addon">Tahun</span>
     </div>
     
