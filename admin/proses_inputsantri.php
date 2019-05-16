@@ -71,5 +71,6 @@ $notelpwali=$_POST['notelpwali'];
 $nowhatsappwali=$_POST['nowhatsappwali'];
 $emailwali=$_POST['emailwali'];
 
-
+$anak=($conn,"INSERT INTO tbsantri (Nama, NamaLengkap, JenisKelamin, TempatLahir, TglLahir, AnakKe, Bahasa, KebutuhanKhusus, SekolahTerakhir, NamaSekolah, AlamatSekolah, TinggalDengan, NomorKK, NamaJalan, RT, RW, Desa, Kecamatan, Kabupaten, Provinsi, IdProgram
+) VALUES ('$namalengkap','$nama','$jeniskelamin','$tempatlahir','$tgllahir','$anakke','$dari','$bahasa','$kebutuhankhusus','$sekolahterakhir','$namasekolah','$alamatsekolah','$tinggaldengan','$nomorkk','$namajalan','$rt','$rw','$desa','$kabupaten','$kecamatan','$provinsinsi')");
 ?>
