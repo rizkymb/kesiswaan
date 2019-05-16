@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2019 at 07:33 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.10
+-- Waktu pembuatan: 16 Bulan Mei 2019 pada 03.37
+-- Versi server: 10.1.37-MariaDB
+-- Versi PHP: 7.2.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbayah`
+-- Struktur dari tabel `tbayah`
 --
 
 CREATE TABLE `tbayah` (
@@ -52,7 +52,7 @@ CREATE TABLE `tbayah` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbibu`
+-- Struktur dari tabel `tbibu`
 --
 
 CREATE TABLE `tbibu` (
@@ -79,19 +79,23 @@ CREATE TABLE `tbibu` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbprogram`
+-- Struktur dari tabel `tbprogram`
 --
 
 CREATE TABLE `tbprogram` (
   `IdProgram` int(11) NOT NULL,
   `ProgramStudi` varchar(30) NOT NULL,
+  `Juz` int(11) NOT NULL,
+  `AyatPerhari` int(11) NOT NULL,
+  `BulanPerjuz` int(11) NOT NULL,
+  `Tahun` int(11) NOT NULL,
   `Keterangan` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbsantri`
+-- Struktur dari tabel `tbsantri`
 --
 
 CREATE TABLE `tbsantri` (
@@ -121,7 +125,7 @@ CREATE TABLE `tbsantri` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbuser`
+-- Struktur dari tabel `tbuser`
 --
 
 CREATE TABLE `tbuser` (
@@ -136,7 +140,7 @@ CREATE TABLE `tbuser` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbwali`
+-- Struktur dari tabel `tbwali`
 --
 
 CREATE TABLE `tbwali` (
@@ -165,65 +169,65 @@ CREATE TABLE `tbwali` (
 --
 
 --
--- Indexes for table `tbayah`
+-- Indeks untuk tabel `tbayah`
 --
 ALTER TABLE `tbayah`
   ADD PRIMARY KEY (`IdAyah`);
 
 --
--- Indexes for table `tbibu`
+-- Indeks untuk tabel `tbibu`
 --
 ALTER TABLE `tbibu`
   ADD PRIMARY KEY (`IdIbu`);
 
 --
--- Indexes for table `tbprogram`
+-- Indeks untuk tabel `tbprogram`
 --
 ALTER TABLE `tbprogram`
   ADD PRIMARY KEY (`IdProgram`);
 
 --
--- Indexes for table `tbuser`
+-- Indeks untuk tabel `tbuser`
 --
 ALTER TABLE `tbuser`
   ADD PRIMARY KEY (`IdUser`);
 
 --
--- Indexes for table `tbwali`
+-- Indeks untuk tabel `tbwali`
 --
 ALTER TABLE `tbwali`
   ADD PRIMARY KEY (`IdWali`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbayah`
+-- AUTO_INCREMENT untuk tabel `tbayah`
 --
 ALTER TABLE `tbayah`
   MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbibu`
+-- AUTO_INCREMENT untuk tabel `tbibu`
 --
 ALTER TABLE `tbibu`
   MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbprogram`
+-- AUTO_INCREMENT untuk tabel `tbprogram`
 --
 ALTER TABLE `tbprogram`
   MODIFY `IdProgram` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbuser`
+-- AUTO_INCREMENT untuk tabel `tbuser`
 --
 ALTER TABLE `tbuser`
   MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `tbwali`
+-- AUTO_INCREMENT untuk tabel `tbwali`
 --
 ALTER TABLE `tbwali`
   MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT;
