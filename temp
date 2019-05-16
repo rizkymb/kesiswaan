@@ -1,1 +1,5 @@
-'$namalengkap','$nama','$jeniskelamin','$tempatlahir','$tgllahir','$anakke','$dari','$bahasa','$kebutuhankhusus','$sekolahterakhir','$namasekolah','$alamatsekolah','$tinggaldengan','$nomorkk','$namajalan','$rt','$rw','$desa','$kabupaten','$kecamatan','$provinsinsi'
+$anak=($conn,"INSERT INTO tbsantri (Nama, NamaLengkap, JenisKelamin, TempatLahir, TglLahir, AnakKe, Bahasa, KebutuhanKhusus, SekolahTerakhir, NamaSekolah, AlamatSekolah, TinggalDengan, NomorKK, NamaJalan, RT, RW, Desa, Kecamatan, Kabupaten, Provinsi, IdProgram
+) VALUES ('$namalengkap','$nama','$jeniskelamin','$tempatlahir','$tgllahir','$anakke','$dari','$bahasa','$kebutuhankhusus','$sekolahterakhir','$namasekolah','$alamatsekolah','$tinggaldengan','$nomorkk','$namajalan','$rt','$rw','$desa','$kabupaten','$kecamatan','$provinsinsi')");
+
+'$namalengkapwali','$tempatlahirwali','$usiawali','$pekerjaanwali','$penghasilanwali','$namajalanwali','$rtwali','$rwwali','$desawali','$kecamatanwali','$kabupatenwali','$provinsiwali','$notelpwali','$nowhatsappwali','$emailwali'
+IdWali, NamaLengkapWali, TempatLahirWali, TanggalLahirWali, UsiaWali, PekerjaanWali, PenghasilanWali, NamaJalanWali, RTWali, RWWali, DesaWali, KecamatanWali, KabupatenWali, ProvinsiWali, NoTelpWali, NoWhatsappWali, EmailWali, IdSantri
