@@ -50,11 +50,11 @@
     <label class="col-md-4 control-label" for="jeniskelamin">Jenis Kelamin</label>
     <div class="col-md-4"> 
         <label class="radio-inline" for="jeniskelamin-0">
-        <input type="radio" name="jeniskelamin" id="jeniskelamin-0" value="1" checked="checked">
+        <input type="radio" name="jeniskelamin" id="jeniskelamin-0" value="0" checked="checked">
         Laki - Laki
         </label> 
         <label class="radio-inline" for="jeniskelamin-1">
-        <input type="radio" name="jeniskelamin" id="jeniskelamin-1" value="2">
+        <input type="radio" name="jeniskelamin" id="jeniskelamin-1" value="1">
         Perempuan
         </label>
     </div>
@@ -85,15 +85,15 @@
     <label class="col-md-4 control-label" for="bahasa">Bahasa Sehari - Hari</label>
     <div class="col-md-4"> 
         <label class="radio-inline" for="bahasa-0">
-        <input type="radio" name="bahasa" id="bahasa-0" value="1" checked="checked">
+        <input type="radio" name="bahasa" id="bahasa-0" value="Sunda" checked="checked">
         Sunda
         </label> 
         <label class="radio-inline" for="bahasa-1">
-        <input type="radio" name="bahasa" id="bahasa-1" value="2">
+        <input type="radio" name="bahasa" id="bahasa-1" value="Indonesia">
         Indonesia
         </label> 
         <label class="radio-inline" for="bahasa-2">
-        <input type="radio" name="bahasa" id="bahasa-2" value="3">
+        <input type="radio" name="bahasa" id="bahasa-2" value="Lainnya">
         Lainnya
         </label>
     </div>
@@ -104,39 +104,39 @@
     <label class="col-md-4 control-label" for="kebutuhankhusus">Berkebutuhan Khusus</label>
     <div class="col-md-5"> 
         <label class="radio-inline" for="kebutuhankhusus-0">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-0" value="1" checked="checked">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-0" value="Tidak" checked="checked">
         Tidak
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-1">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Autis">
         Autis
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-2">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Indigo">
         Indigo
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-3">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Hyper Aktif">
         Hyper Aktif
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-4">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Dhuafa">
         Dhuafa
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-5">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Yatim">
         Yatim
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-6">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Piatu">
         Piatu
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-7">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Narkoba">
         Narkoba
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-8">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="2">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Lainnya">
         Lainnya
         </label>
     </div>
@@ -148,25 +148,25 @@
     <div class="col-md-4">
     <div class="radio">
         <label for="sekolahterakhir-0">
-        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-0" value="1" checked="checked">
+        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-0" value="SD / MI" checked="checked">
         SD / MI
         </label>
         </div>
     <div class="radio">
         <label for="sekolahterakhir-1">
-        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-1" value="2">
+        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-1" value="SMP / MTs">
         SMP / MTs
         </label>
         </div>
     <div class="radio">
         <label for="sekolahterakhir-2">
-        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-2" value="3">
+        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-2" value="SMA / SMK / MA">
         SMA / SMK / MA
         </label>
         </div>
     <div class="radio">
         <label for="sekolahterakhir-3">
-        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-3" value="4">
+        <input type="radio" name="sekolahterakhir" id="sekolahterakhir-3" value="Lainnya">
         Lainnya
         </label>
         </div>
@@ -196,19 +196,19 @@
     <div class="col-md-4">
     <div class="radio">
         <label for="tinggaldengan-0">
-        <input type="radio" name="tinggaldengan" id="tinggaldengan-0" value="1" checked="checked">
+        <input type="radio" name="tinggaldengan" id="tinggaldengan-0" value="Orang Tua" checked="checked">
         Orang Tua
         </label>
         </div>
     <div class="radio">
         <label for="tinggaldengan-1">
-        <input type="radio" name="tinggaldengan" id="tinggaldengan-1" value="2">
+        <input type="radio" name="tinggaldengan" id="tinggaldengan-1" value="Wali">
         Wali
         </label>
         </div>
     <div class="radio">
         <label for="tinggaldengan-2">
-        <input type="radio" name="tinggaldengan" id="tinggaldengan-2" value="3">
+        <input type="radio" name="tinggaldengan" id="tinggaldengan-2" value="Lainnya">
         Lainnya
         </label>
         </div>
@@ -343,12 +343,27 @@
   </div>
 </div>
 
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="jeniskelamin">Jenis Kelamin</label>
+    <div class="col-md-4"> 
+        <label class="radio-inline" for="jeniskelamin-0">
+        <input type="radio" name="jeniskelamin" id="jeniskelamin-0" value="1" checked="checked">
+        Laki - Laki
+        </label> 
+        <label class="radio-inline" for="jeniskelamin-1">
+        <input type="radio" name="jeniskelamin" id="jeniskelamin-1" value="2">
+        Perempuan
+        </label>
+    </div>
+    </div>
+
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="tempatlahirayah">Tempat Lahir</label>  
+  <label class="col-md-4 control-label" for="tempatlahirayah">Tempat / Tanggal Lahir</label>  
   <div class="col-md-4">
   <input id="tempatlahirayah" name="tempatlahirayah" type="text" placeholder="" class="form-control input-md">
-    
+  <input id="tgllahirayah" name="tgllahirayah" type="date" placeholder="" class="form-control input-md" required="">
   </div>
 </div>
 
@@ -367,49 +382,49 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="pekerjaanayah-0">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-0" value="1" checked="checked">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-0" value="Wiraswasta" checked="checked">
       Wiraswasta
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-1">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-1" value="2">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-1" value="Pegawai Swasta">
       Pegawai Swasta
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-2">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-2" value="3">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-2" value="Pedagang / Buruh">
       Pedagang / Buruh
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-3">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-3" value="4">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-3" value="Guru / Mubaligh">
       Guru / Mubaligh
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-4">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-4" value="5">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-4" value="PNS">
       PNS
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-5">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-5" value="6">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-5" value="TNI / Polri">
       TNI / Polri
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-6">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-6" value="7">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-6" value="Pensiunan">
       Pensiunan
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanayah-7">
-      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-7" value="8">
+      <input type="radio" name="pekerjaanayah" id="pekerjaanayah-7" value="Lainnya">
       Lainnya
     </label>
 	</div>
@@ -422,19 +437,19 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="penghasilanayah-0">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1" checked="checked">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1 - 3 Juta" checked="checked">
       1 - 3 Juta
     </label>
 	</div>
   <div class="radio">
     <label for="penghasilanayah-1">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="2">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="3 - 5 Juta">
       3 - 5 Juta
     </label>
 	</div>
   <div class="radio">
     <label for="penghasilanayah-2">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="3">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="Di Atas 5 Juta">
       DI Atas 5 Juta
     </label>
 	</div>
@@ -548,10 +563,10 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="tempatlahiribu">Tempat Lahir</label>  
+  <label class="col-md-4 control-label" for="tempatlahiribu">Tempat / Tanggal Lahir</label>  
   <div class="col-md-4">
   <input id="tempatlahiribu" name="tempatlahiribu" type="text" placeholder="" class="form-control input-md">
-    
+  <input id="tgllahiribu" name="tgllahiribu" type="date" placeholder="" class="form-control input-md" required="">
   </div>
 </div>
 
@@ -570,49 +585,49 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="pekerjaanibu-0">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-0" value="1" checked="checked">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-0" value="Ibu Rumah Tangga" checked="checked">
       Ibu Rumah Tangga
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-1">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-1" value="2">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-1" value="Wiraswasta">
       Wiraswasta
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-2">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-2" value="3">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-2" value="Pegawai Swasta">
       Pegawai Swasta
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-3">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-3" value="4">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-3" value="Pedagang / Buruh">
       Pedagang / Buruh
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-4">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-4" value="5">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-4" value="Guru / Mubaligh">
       Guru / Mubaligh
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-5">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-5" value="6">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-5" value="PNS / TNI / Polri">
       PNS / TNI / Polri
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-6">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-6" value="7">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-6" value="Pensiunan">
       Pensiunan
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanibu-7">
-      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-7" value="8">
+      <input type="radio" name="pekerjaanibu" id="pekerjaanibu-7" value="Lainnya">
       Lainnya
     </label>
 	</div>
@@ -625,19 +640,19 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="penghasilanayah-0">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1" checked="checked">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1 - 3 Juta" checked="checked">
       1 - 3 Juta
     </label>
 	</div>
   <div class="radio">
     <label for="penghasilanayah-1">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="2">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="3 - 5 Juta">
       3 - 5 Juta
     </label>
 	</div>
   <div class="radio">
     <label for="penghasilanayah-2">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="3">
+      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="DI Atas 5 Juta">
       DI Atas 5 Juta
     </label>
 	</div>
@@ -751,12 +766,27 @@
   </div>
 </div>
 
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="jeniskelamin">Jenis Kelamin</label>
+    <div class="col-md-4"> 
+        <label class="radio-inline" for="jeniskelamin-0">
+        <input type="radio" name="jeniskelaminwali" id="jeniskelaminwali-0" value="0" checked="checked">
+        Laki - Laki
+        </label> 
+        <label class="radio-inline" for="jeniskelamin-1">
+        <input type="radio" name="jeniskelaminwali" id="jeniskelaminwali-1" value="1">
+        Perempuan
+        </label>
+    </div>
+    </div>
+
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="tempatlahirwali">Tempat Lahir</label>  
+  <label class="col-md-4 control-label" for="tempatlahirwali">Tempat / Tanggal Lahir</label>  
   <div class="col-md-4">
   <input id="tempatlahirwali" name="tempatlahirwali" type="text" placeholder="" class="form-control input-md" >
-    
+  <input id="tgllahirwali" name="tgllahirwali" type="date" placeholder="" class="form-control input-md" required="">
   </div>
 </div>
 
@@ -775,49 +805,49 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="pekerjaanwali-0">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-0" value="1" checked="checked">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-0" value="Ibu Rumah Tangga" checked="checked">
       Ibu Rumah Tangga
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-1">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-1" value="2">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-1" value="Wiraswasta">
       Wiraswasta
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-2">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-2" value="3">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-2" value="Pegawai Swasta">
       Pegawai Swasta
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-3">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-3" value="4">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-3" value="Pedagang / Buruh">
       Pedagang / Buruh
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-4">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-4" value="5">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-4" value="Guru / Mubaligh">
       Guru / Mubaligh
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-5">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-5" value="6">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-5" value="PNS / TNI / Polri">
       PNS / TNI / Polri
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-6">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-6" value="7">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-6" value="Pensiunan">
       Pensiunan
     </label>
 	</div>
   <div class="radio">
     <label for="pekerjaanwali-7">
-      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-7" value="8">
+      <input type="radio" name="pekerjaanwali" id="pekerjaanwali-7" value="Lainnya">
       Lainnya
     </label>
 	</div>
@@ -830,19 +860,19 @@
   <div class="col-md-4">
   <div class="radio">
     <label for="penghasilanwali-0">
-      <input type="radio" name="penghasilanwali" id="penghasilanwali-0" value="1" checked="checked">
+      <input type="radio" name="penghasilanwali" id="penghasilanwali-0" value="1 - 3 Juta" checked="checked">
       1 - 3 Juta
     </label>
 	</div>
   <div class="radio">
     <label for="penghasilanwali-1">
-      <input type="radio" name="penghasilanwali" id="penghasilanwali-1" value="2">
+      <input type="radio" name="penghasilanwali" id="penghasilanwali-1" value="3 - 5 Juta">
       3 - 5 Juta
     </label>
 	</div>
   <div class="radio">
     <label for="penghasilanwali-2">
-      <input type="radio" name="penghasilanwali" id="penghasilanwali-2" value="3">
+      <input type="radio" name="penghasilanwali" id="penghasilanwali-2" value="DI Atas 5 Juta">
       DI Atas 5 Juta
     </label>
 	</div>

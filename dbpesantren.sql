@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2019 at 03:35 AM
+-- Generation Time: May 17, 2019 at 05:17 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -57,7 +57,7 @@ CREATE TABLE `tbayah` (
   `TanggalLahirAyah` date NOT NULL,
   `UsiaAyah` varchar(15) NOT NULL,
   `PekerjaanAyah` varchar(50) NOT NULL,
-  `Penghasilan` varchar(30) NOT NULL,
+  `PenghasilanAyah` varchar(30) NOT NULL,
   `NamaJalanAyah` text NOT NULL,
   `RTAyah` varchar(50) NOT NULL,
   `RWAyah` varchar(50) NOT NULL,
@@ -70,6 +70,14 @@ CREATE TABLE `tbayah` (
   `EmailAyah` varchar(30) NOT NULL,
   `IdSantri` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbayah`
+--
+
+INSERT INTO `tbayah` (`IdAyah`, `NamaLengkapAyah`, `TempatLahirAyah`, `TanggalLahirAyah`, `UsiaAyah`, `PekerjaanAyah`, `PenghasilanAyah`, `NamaJalanAyah`, `RTAyah`, `RWAyah`, `DesaAyah`, `KecamatanAyah`, `KabupatenAyah`, `ProvinsiAyah`, `NoTelpAyah`, `NoWhatsappAyah`, `EmailAyah`, `IdSantri`) VALUES
+(1, 'Haji Lulung', 'Jakarta', '2019-05-17', '54', 'PNS', '1 - 3 Juta ', 'Jl. Jalan Maju Mundur', '01', '02', 'Kalijodo', 'Menteng', 'Jakarta Pusat', 'DKI Jakarta', '081936669580', '081936669580', 'agysawh90@gmail.com', 1),
+(2, 'Raiden', 'Denpasar', '0000-00-00', '50', 'Pensiunan', '1 - 3 Juta', 'Jl. Elder God', '1', '2', 'Shaolin Temple', 'Lin Kuei', 'Jinsei', 'Earthrealm', '666', '666', 'Raiden@gmail.com', 1);
 
 -- --------------------------------------------------------
 
@@ -97,6 +105,15 @@ CREATE TABLE `tbibu` (
   `EmailIbu` varchar(30) NOT NULL,
   `IdSantri` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbibu`
+--
+
+INSERT INTO `tbibu` (`IdIbu`, `NamaLengkapIbu`, `TempatLahirIbu`, `TanggalLahirIbu`, `UsiaIbu`, `PekerjaanIbu`, `PenghasilanIbu`, `NamaJalanIbu`, `RTIbu`, `RWIbu`, `DesaIbu`, `KecamatanIbu`, `KabupatenIbu`, `ProvinsiIbu`, `NoTelpIbu`, `NoWhatsappIbu`, `EmailIbu`, `IdSantri`) VALUES
+(1, 'Khotijah Siti', 'Tangerang', '2019-05-17', '17', 'Ibu Rumah Tangga', '1 - 3 Juta', 'Jl. Jalan Maju Mundur', '01', '02', 'Wonosobo', 'Jambi', 'Jambi', 'Jawa Barat', '081728378278', '081728378278', 'siti@gmail.com', 1),
+(2, 'Hinata', 'Konoha', '0000-00-00', '34', 'Ibu Rumah Tangga', '', 'Jl. Elder God', '1', '2', 'Desa Daun', 'Konoha Barat', 'Konoha', 'Ninja', '112122112', '3233223', '', 1),
+(3, 'Hinata', 'Konoha', '0000-00-00', '34', 'Ibu Rumah Tangga', '', 'Jl. Elder God', '1', '2', 'Desa Daun', 'Konoha Barat', 'Konoha', 'Ninja', '112122112', '3233223', '', 1);
 
 -- --------------------------------------------------------
 
@@ -160,7 +177,12 @@ CREATE TABLE `tbsantri` (
 --
 
 INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `IdProgram`) VALUES
-(1, 'Yozha', 'Yozha Galant', 1, 'Denpasar', '2019-05-17', 2, 0, 'Indonesia', 0, 'SD', 'SD Keren', 'Jl. Jalan ke Jalan', 'Orang Tua', '22323222332', 'Jl. Jalan Maju Mundur', '01', '02', 'Kembang', 'Sumedang', 'Cilacap', 'Jawa Barat', 1);
+(1, 'Yozha', 'Yozha Galant', 1, 'Denpasar', '2019-05-17', 2, 0, 'Indonesia', 0, 'SD', 'SD Keren', 'Jl. Jalan ke Jalan', 'Orang Tua', '22323222332', 'Jl. Jalan Maju Mundur', '01', '02', 'Kembang', 'Sumedang', 'Cilacap', 'Jawa Barat', 1),
+(2, 'Alvin', 'Alvin Christian', 1, 'Lombok', '2019-05-17', 2, 2, 'Indonesia', 0, 'SD / MI', 'SD Maju Mundur', 'Jl. Tukad CItarum No. 24', 'Orang Tua', '1212121221', 'Jl. Manakaden No 12XXX', '01', '02', 'Panjer', 'Denpasar Selatan', 'Denpasar', '', 1),
+(3, 'Alvin', 'Alvin Christian', 1, 'Lombok', '2019-05-17', 2, 2, 'Indonesia', 0, 'SD / MI', 'SD Maju Mundur', 'Jl. Tukad CItarum No. 24', 'Orang Tua', '1212121221', 'Jl. Manakaden No 12XXX', '01', '02', 'Panjer', 'Denpasar Selatan', 'Denpasar', '', 1),
+(4, 'Alvin', 'Alvin Christian', 1, 'Lombok', '2019-05-17', 2, 2, 'Indonesia', 0, 'SD / MI', 'SD Maju Mundur', 'Jl. Tukad CItarum No. 24', 'Orang Tua', '1212121221', 'Jl. Manakaden No 12XXX', '01', '02', 'Panjer', 'Denpasar Selatan', 'Denpasar', '', 1),
+(5, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-01', 1, 20, 'Indonesia', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '2131211212', 'Jl. Jalan Wedhus Sucana', '1', '2', 'Pangkalrejo', 'Jambi', 'Ngawi', '', 2),
+(6, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-01', 1, 20, 'Indonesia', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '2131211212', 'Jl. Jalan Wedhus Sucana', '1', '2', 'Pangkalrejo', 'Jambi', 'Ngawi', '', 2);
 
 -- --------------------------------------------------------
 
@@ -203,6 +225,14 @@ CREATE TABLE `tbwali` (
   `EmailWali` varchar(30) NOT NULL,
   `IdSantri` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbwali`
+--
+
+INSERT INTO `tbwali` (`IdWali`, `NamaLengkapWali`, `TempatLahirWali`, `TanggalLahirWali`, `UsiaWali`, `PekerjaanWali`, `PenghasilanWali`, `NamaJalanWali`, `RTWali`, `RWWali`, `DesaWali`, `KecamatanWali`, `KabupatenWali`, `ProvinsiWali`, `NoTelpWali`, `NoWhatsappWali`, `EmailWali`, `IdSantri`) VALUES
+(1, '', '', '0000-00-00', '', 'Ibu Rumah Tangga', '1 - 3 Juta', '', '', '', '', '', '', '', '', '', '', 1),
+(2, '', '', '0000-00-00', '', 'Ibu Rumah Tangga', '1 - 3 Juta', '', '', '', '', '', '', '', '', '', '', 1);
 
 --
 -- Indexes for dumped tables
@@ -264,13 +294,13 @@ ALTER TABLE `tbabsen`
 -- AUTO_INCREMENT for table `tbayah`
 --
 ALTER TABLE `tbayah`
-  MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbibu`
 --
 ALTER TABLE `tbibu`
-  MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbprogram`
@@ -282,7 +312,7 @@ ALTER TABLE `tbprogram`
 -- AUTO_INCREMENT for table `tbsantri`
 --
 ALTER TABLE `tbsantri`
-  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tbuser`
@@ -294,7 +324,7 @@ ALTER TABLE `tbuser`
 -- AUTO_INCREMENT for table `tbwali`
 --
 ALTER TABLE `tbwali`
-  MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
