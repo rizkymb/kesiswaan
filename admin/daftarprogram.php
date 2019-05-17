@@ -1,6 +1,6 @@
 <html>
 <div class="panel panel-success">
-  <div class="panel-heading">Form Data Santri</div>
+  <div class="panel-heading">Form Input Program</div>
   <div class="panel-body">
 <form class="form-horizontal" action="proses_inputprogram.php" method="post">
 <fieldset>
