@@ -738,7 +738,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="namalengkapwali">Nama Lengkap</label>  
   <div class="col-md-4">
-  <input id="namalengkapwali" name="namalengkapwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="namalengkapwali" name="namalengkapwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -747,7 +747,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="tempatlahirwali">Tempat Lahir</label>  
   <div class="col-md-4">
-  <input id="tempatlahirwali" name="tempatlahirwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="tempatlahirwali" name="tempatlahirwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -756,7 +756,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="usiawali">Usia</label>  
   <div class="col-md-4">
-  <input id="usiawali" name="usiawali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="usiawali" name="usiawali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -853,7 +853,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="rtwali">RT</label>  
   <div class="col-md-1">
-  <input id="rtwali" name="rtwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="rtwali" name="rtwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -862,7 +862,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="rwwali">RW</label>  
   <div class="col-md-1">
-  <input id="rwwali" name="rwwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="rwwali" name="rwwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -871,7 +871,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="desawali">Kelurahan / Desa</label>  
   <div class="col-md-4">
-  <input id="desawali" name="desawali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="desawali" name="desawali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -880,7 +880,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="kecamatanwali">Kecamatan</label>  
   <div class="col-md-4">
-  <input id="kecamatanwali" name="kecamatanwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="kecamatanwali" name="kecamatanwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -889,7 +889,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="notelpwali">No. Telepon</label>  
   <div class="col-md-4">
-  <input id="notelpwali" name="notelpwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="notelpwali" name="notelpwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -898,7 +898,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nowhatsappwali">No. Whatsapp</label>  
   <div class="col-md-4">
-  <input id="nowhatsappwali" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="nowhatsappwali" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -907,7 +907,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="kabupatenwali">Kabupaten</label>  
   <div class="col-md-4">
-  <input id="kabupatenwali" name="kabupatenwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="kabupatenwali" name="kabupatenwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -916,7 +916,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="provinsiwali">Provinsi</label>  
   <div class="col-md-4">
-  <input id="provinsiwali" name="provinsiwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="provinsiwali" name="provinsiwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -925,7 +925,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="notelpibu">No. Telepon</label>  
   <div class="col-md-4">
-  <input id="notelpibu" name="notelpwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="notelpibu" name="notelpwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -934,7 +934,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nowhatsappibu">No. Whatsapp</label>  
   <div class="col-md-4">
-  <input id="nowhatsappibu" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" required="">
+  <input id="nowhatsappibu" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -943,7 +943,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="emailibu">Email</label>  
   <div class="col-md-4">
-  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" required="">   
+  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" >   
   </div>
 </div>
 </div>
