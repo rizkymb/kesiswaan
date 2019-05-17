@@ -61,11 +61,10 @@
 
     <div class="container">
       <?php
+      include 'config.php';
       $m = $_GET['m'];
 
-      if ($m=='') {
-        echo "menu";
-      }elseif ($m=='inputdata') {
+      if ($m=='inputdata') {
         include 'daftarsantri.php';
       }elseif ($m=='inputprogram') {
         include 'daftarprogram.php';
