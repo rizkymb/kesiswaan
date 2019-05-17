@@ -22,6 +22,7 @@ $desa = $_POST['desa'];
 $kabupaten = $_POST['kabupaten'];
 $kecamatan = $_POST['kecamatan'];
 $provinsi = $_POST['provinsi'];
+$pilihpaket=$_POST['pilihpaket'];
 
 $namalengkapayah=$_POST['namalengkapayah'];
 $tempatlahirayah=$_POST['tempatlahirayah'];
@@ -71,8 +72,9 @@ $notelpwali=$_POST['notelpwali'];
 $nowhatsappwali=$_POST['nowhatsappwali'];
 $emailwali=$_POST['emailwali'];
 
-$anak=mysqli_query($conn, "INSERT INTO tbsantri (Nama, NamaLengkap, JenisKelamin, TempatLahir, TglLahir, AnakKe, Bahasa, KebutuhanKhusus, SekolahTerakhir, NamaSekolah, AlamatSekolah, TinggalDengan, NomorKK, NamaJalan, RT, RW, Desa, Kecamatan, Kabupaten, Provinsi, IdProgram) 
-VALUES ('$nama','$namalengkap','$jeniskelamin','$tempatlahir','$tgllahir','$anakke','$dari','$bahasa','$kebutuhankhusus','$sekolahterakhir','$namasekolah','$alamatsekolah','$tinggaldengan','$nomorkk','$namajalan','$rt','$rw','$desa','$kabupaten','$kecamatan','$provinsinsi')");
+$anak=mysqli_query($conn, "INSERT INTO tbsantri (Nama, NamaLengkap, JenisKelamin, TempatLahir, TglLahir, AnakKe,Dari, Bahasa, KebutuhanKhusus, SekolahTerakhir, NamaSekolah, AlamatSekolah, TinggalDengan, NomorKK, NamaJalan, RT, RW, Desa, Kecamatan, Kabupaten, Provinsi, IdProgram)
+
+VALUES ('$nama','$namalengkap','$jeniskelamin','$tempatlahir','$tgllahir','$anakke','$dari','$bahasa','$kebutuhankhusus','$sekolahterakhir','$namasekolah','$alamatsekolah','$tinggaldengan','$nomorkk','$namajalan','$rt','$rw','$desa','$kabupaten','$kecamatan','$provinsinsi','$pilihpaket')");
 
 $q=mysql_query($conn,"SELECT IdSantri FROM tbsantri WHERE NamaLengkap='$namalengkap' AND JenisKelamin='$jeniskelamin' AND NamaJalan='$namajalan'");
 $idsantri=mysqli_fetch_object($q);
