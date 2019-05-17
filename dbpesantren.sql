@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 16, 2019 at 09:28 AM
+-- Generation Time: May 17, 2019 at 03:35 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -21,6 +21,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `dbpesantren`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbabsen`
+--
+
+CREATE TABLE `tbabsen` (
+  `IdAbsensi` int(11) NOT NULL,
+  `IdSantri` int(11) NOT NULL,
+  `IdAyah` int(11) NOT NULL,
+  `IdIbu` int(11) NOT NULL,
+  `IdWali` int(11) NOT NULL,
+  `Absen` varchar(20) NOT NULL,
+  `SetorAyat` int(11) NOT NULL,
+  `Surat` int(11) NOT NULL,
+  `TanggalAbsen` date NOT NULL,
+  `JuzSaatIni` int(11) NOT NULL,
+  `TargetJuz` int(11) NOT NULL,
+  `KeteranganAbsen` text NOT NULL,
+  `StatusMurid` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -97,9 +119,9 @@ CREATE TABLE `tbprogram` (
 --
 
 INSERT INTO `tbprogram` (`IdProgram`, `ProgramStudi`, `Juz`, `AyatPerhari`, `BulanPerjuz`, `Tahun`, `Keterangan`) VALUES
-(1, 'Paket 1', 4, 6, 3, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 4 juz dalam 1 tahun'),
-(2, 'Paket 2', 3, 5, 4, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 3 juz dalam 1 tahun'),
-(3, 'Paket 3', 2, 4, 6, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 2 juz dalam 1 tahun');
+(1, 'Paket 1 (4 Juz/Tahun)', 4, 6, 3, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 4 juz dalam 1 tahun'),
+(2, 'Paket 2 (3 Juz/Tahun)', 3, 5, 4, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 3 juz dalam 1 tahun'),
+(3, 'Paket 3 (2 Juz/Tahun)', 2, 4, 6, 1, 'Paket menghafal ini mendorong siswa supaya bisa menghafal 2 juz dalam 1 tahun');
 
 -- --------------------------------------------------------
 
@@ -114,7 +136,8 @@ CREATE TABLE `tbsantri` (
   `JenisKelamin` int(2) NOT NULL,
   `TempatLahir` varchar(40) NOT NULL,
   `TglLahir` date NOT NULL,
-  `AnakKe` varchar(5) NOT NULL,
+  `AnakKe` int(5) NOT NULL,
+  `Dari` int(11) NOT NULL,
   `Bahasa` varchar(40) NOT NULL,
   `KebutuhanKhusus` int(11) NOT NULL,
   `SekolahTerakhir` varchar(20) NOT NULL,
@@ -131,6 +154,13 @@ CREATE TABLE `tbsantri` (
   `Provinsi` varchar(100) NOT NULL,
   `IdProgram` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbsantri`
+--
+
+INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `IdProgram`) VALUES
+(1, 'Yozha', 'Yozha Galant', 1, 'Denpasar', '2019-05-17', 2, 0, 'Indonesia', 0, 'SD', 'SD Keren', 'Jl. Jalan ke Jalan', 'Orang Tua', '22323222332', 'Jl. Jalan Maju Mundur', '01', '02', 'Kembang', 'Sumedang', 'Cilacap', 'Jawa Barat', 1);
 
 -- --------------------------------------------------------
 
@@ -179,6 +209,12 @@ CREATE TABLE `tbwali` (
 --
 
 --
+-- Indexes for table `tbabsen`
+--
+ALTER TABLE `tbabsen`
+  ADD PRIMARY KEY (`IdAbsensi`);
+
+--
 -- Indexes for table `tbayah`
 --
 ALTER TABLE `tbayah`
@@ -197,6 +233,12 @@ ALTER TABLE `tbprogram`
   ADD PRIMARY KEY (`IdProgram`);
 
 --
+-- Indexes for table `tbsantri`
+--
+ALTER TABLE `tbsantri`
+  ADD PRIMARY KEY (`IdSantri`);
+
+--
 -- Indexes for table `tbuser`
 --
 ALTER TABLE `tbuser`
@@ -211,6 +253,12 @@ ALTER TABLE `tbwali`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `tbabsen`
+--
+ALTER TABLE `tbabsen`
+  MODIFY `IdAbsensi` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `tbayah`
@@ -229,6 +277,12 @@ ALTER TABLE `tbibu`
 --
 ALTER TABLE `tbprogram`
   MODIFY `IdProgram` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `tbsantri`
+--
+ALTER TABLE `tbsantri`
+  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbuser`
