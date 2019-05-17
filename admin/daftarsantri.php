@@ -15,6 +15,14 @@
     <div class="col-md-4">
     <select class="form-control" name="pilihpaket" id="pilihpaket">
       <option value="">Pilih Paket</option>
+      <?php 
+      include 'config.php';
+      $sql="select * from tbprogram";
+      $query=mysqli_query($conn,$sql);
+      while ($data=mysqli_fetch_object($query)) {
+      ?>
+      <option value="<?php echo $data->IdProgram ?>"><?php echo $data->ProgramStudi; ?></option>
+    <?php }?>
     </select>
   </div>
 </div>
