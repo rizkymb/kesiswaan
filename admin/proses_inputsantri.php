@@ -103,11 +103,17 @@ $ibu=mysqli_query($conn, $sqlibu);
 
 $wali=mysqli_query($conn, $sqlwali);
 
-echo $sqlanak;
-echo "";
-echo $sqlayah;
-echo "";
-echo $sqlibu;
-echo "";
-echo $sqlwali;
+if($anak){
+    echo "<script>alert('Santri Berhasil Diinput !');
+    location.href='index.php?m=inputsantri';
+    </script>";
+}else{
+    echo $sqlanak;
+    echo "";
+    echo $sqlayah;
+    echo "";
+    echo $sqlibu;
+    echo "";
+    echo $sqlwali;
+}
 ?>

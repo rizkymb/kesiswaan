@@ -10,7 +10,7 @@
     <div class="panel panel-success">
         <div class="panel-heading"><?php echo "Kelas ".$data->NamaKelas?></div>
         <div class="panel-body" style="height:430px;overflow-y: auto;">
-            <table class="table table-hover">
+            <table class="table table-bordered table-hover">
                 <tr>
                     <td width="2%" align="center">No. </td>
                     <td align="center">Nama Santri </td>
