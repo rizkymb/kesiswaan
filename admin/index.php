@@ -31,12 +31,13 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="?m=inputprogram">Paket Program</a></li>
+                      <li class="dropdown-header">Input Data</li>
+                      <li><a href="?m=inputprogram">Input Paket Program</a></li>
                       <li><a href="?m=inputdata">Input Data Santri</a></li>
                       <li><a href="?m=inputkelas">Input Data Kelas</a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Secondary Action</li>
-                      <li><a href="#">Separated link</a></li>
+                      <li><a href="index.php?m=absensi">Absensi</a></li>
                       <li><a href="#">One more separated link</a></li>
                     </ul>
                   </li>
@@ -69,6 +70,8 @@
         include 'daftarsantri.php';
       }elseif ($m=='inputprogram') {
         include 'daftarprogram.php';
+      }elseif ($m=='absensi') {
+        include 'absensi.php';
       }elseif ($m=='inputkelas') {
         include 'daftarkelas.php';
       }else {

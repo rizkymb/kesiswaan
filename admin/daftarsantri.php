@@ -27,6 +27,24 @@
   </div>
 </div>
 
+      <!-- Text input-->
+    <div class="form-group">
+    <label class="col-md-4 control-label" for="namalengkap">Pilih Kelas</label>  
+    <div class="col-md-4">
+    <select class="form-control" name="pilihkelas" id="pilihkelas">
+      <option value="">Pilih Kelas</option>
+      <?php 
+      include 'config.php';
+      $sql="select * from tbkelas";
+      $query=mysqli_query($conn,$sql);
+      while ($data=mysqli_fetch_object($query)) {
+      ?>
+      <option value="<?php echo $data->IdKelas ?>"><?php echo $data->NamaKelas; ?></option>
+    <?php }?>
+    </select>
+  </div>
+</div>
+
     <!-- Text input-->
     <div class="form-group">
     <label class="col-md-4 control-label" for="namalengkap">Nama Lengkap</label>  
