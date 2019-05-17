@@ -78,20 +78,23 @@ $emailwali=$_POST['emailwali'];
 $sqlanak = "INSERT INTO tbsantri (Nama, NamaLengkap, JenisKelamin, TempatLahir, TglLahir, AnakKe, Dari, Bahasa, KebutuhanKhusus, SekolahTerakhir, NamaSekolah, AlamatSekolah, TinggalDengan, NomorKK, NamaJalan, RT, RW, Desa, Kecamatan, Kabupaten, Provinsi, IdProgram)
 VALUES ('$nama','$namalengkap','$jeniskelamin','$tempatlahir','$tgllahir','$anakke','$dari','$bahasa','$kebutuhankhusus','$sekolahterakhir','$namasekolah','$alamatsekolah','$tinggaldengan','$nomorkk','$namajalan','$rt','$rw','$desa','$kabupaten','$kecamatan','$provinsinsi','$pilihpaket')";
 
+$anak=mysqli_query($conn, $sqlanak);
+
+$q=mysqli_query($conn,"SELECT IdSantri FROM tbsantri WHERE NamaLengkap='$namalengkap' AND JenisKelamin='$jeniskelamin' AND NamaJalan='$namajalan'");
+
+$data=mysqli_fetch_object($q);
+
+$idsantri = $data->IdSantri;
+
 $sqlayah = "INSERT INTO tbayah ( NamaLengkapAyah, TempatLahirAyah, TanggalLahirAyah, UsiaAyah, PekerjaanAyah, PenghasilanAyah, NamaJalanAyah, RTAyah, RWAyah, DesaAyah, KecamatanAyah, KabupatenAyah, ProvinsiAyah, NoTelpAyah, NoWhatsappAyah, EmailAyah, IdSantri) 
-VALUES ('$namalengkapayah','$tempatlahirayah','$tanggallahirayah','$usiaayah','$pekerjaanayah','$penghasilanayah','$namajalanayah','$rtayah','$rwayah','$desaayah','$kecamatanayah','$kabupatenayah','$provinsiayah','$notelpayah','$nowhatsappayah','$emailayah', '1')";
+VALUES ('$namalengkapayah','$tempatlahirayah','$tanggallahirayah','$usiaayah','$pekerjaanayah','$penghasilanayah','$namajalanayah','$rtayah','$rwayah','$desaayah','$kecamatanayah','$kabupatenayah','$provinsiayah','$notelpayah','$nowhatsappayah','$emailayah', '$idsantri')";
 
 $sqlibu = "INSERT INTO tbibu ( NamaLengkapIbu, TempatLahirIbu, TanggalLahirIbu, UsiaIbu, PekerjaanIbu, PenghasilanIbu, NamaJalanIbu, RTIbu, RWIbu, DesaIbu, KecamatanIbu, KabupatenIbu, ProvinsiIbu, NoTelpIbu, NoWhatsappIbu, EmailIbu, IdSantri) 
-VALUES ('$namalengkapibu','$tempatlahiribu','$tanggallahiribu','$usiaibu','$pekerjaanibu','$penghasilanibu','$namajalanibu','$rtibu','$rwibu','$desaibu','$kecamatanibu','$kabupatenibu','$provinsiibu','$notelpibu','$nowhatsappibu','$emailibu', '1')";
+VALUES ('$namalengkapibu','$tempatlahiribu','$tanggallahiribu','$usiaibu','$pekerjaanibu','$penghasilanibu','$namajalanibu','$rtibu','$rwibu','$desaibu','$kecamatanibu','$kabupatenibu','$provinsiibu','$notelpibu','$nowhatsappibu','$emailibu', '$idsantri')";
 
 
 $sqlwali = "INSERT INTO tbwali ( NamaLengkapWali, TempatLahirWali, TanggalLahirWali, UsiaWali, PekerjaanWali, PenghasilanWali, NamaJalanWali, RTWali, RWWali, DesaWali, KecamatanWali, KabupatenWali, ProvinsiWali, NoTelpWali, NoWhatsappWali, EmailWali, IdSantri) 
-VALUES ('$namalengkapwali','$tempatlahirwali','$tanggallahirwali','$usiawali','$pekerjaanwali','$penghasilanwali','$namajalanwali','$rtwali','$rwwali','$desawali','$kecamatanwali','$kabupatenwali','$provinsiwali','$notelpwali','$nowhatsappwali','$emailwali', '1')";
-
-$anak=mysqli_query($conn, $sqlanak);
-
-// $q=mysqli_query($conn,"SELECT IdSantri FROM tbsantri WHERE NamaLengkap='$namalengkap' AND JenisKelamin='$jeniskelamin' AND NamaJalan='$namajalan'");
-// $idsantri=mysqli_fetch_object($q);
+VALUES ('$namalengkapwali','$tempatlahirwali','$tanggallahirwali','$usiawali','$pekerjaanwali','$penghasilanwali','$namajalanwali','$rtwali','$rwwali','$desawali','$kecamatanwali','$kabupatenwali','$provinsiwali','$notelpwali','$nowhatsappwali','$emailwali', '$idsantri')";
 
 $ayah=mysqli_query($conn, $sqlayah);
 

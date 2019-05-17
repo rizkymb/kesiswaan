@@ -786,7 +786,7 @@
   <label class="col-md-4 control-label" for="tempatlahirwali">Tempat / Tanggal Lahir</label>  
   <div class="col-md-4">
   <input id="tempatlahirwali" name="tempatlahirwali" type="text" placeholder="" class="form-control input-md" >
-  <input id="tgllahirwali" name="tgllahirwali" type="date" placeholder="" class="form-control input-md" required="">
+  <input id="tgllahirwali" name="tgllahirwali" type="date" placeholder="" class="form-control input-md">
   </div>
 </div>
 
