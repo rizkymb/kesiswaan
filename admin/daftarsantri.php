@@ -122,7 +122,7 @@
     <label class="col-md-4 control-label" for="kebutuhankhusus">Berkebutuhan Khusus</label>
     <div class="col-md-5"> 
         <label class="radio-inline" for="kebutuhankhusus-0">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-0" value="Tidak" checked="checked">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-0" value="Tidak Ada" checked="checked">
         Tidak
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-1">
@@ -130,31 +130,31 @@
         Autis
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-2">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Indigo">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-2" value="Indigo">
         Indigo
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-3">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Hyper Aktif">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-3" value="Hyper Aktif">
         Hyper Aktif
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-4">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Dhuafa">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-4" value="Dhuafa">
         Dhuafa
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-5">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Yatim">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-5" value="Yatim">
         Yatim
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-6">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Piatu">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-6" value="Piatu">
         Piatu
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-7">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Narkoba">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-7" value="Narkoba">
         Narkoba
         </label> 
         <label class="radio-inline" for="kebutuhankhusus-8">
-        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-1" value="Lainnya">
+        <input type="radio" name="kebutuhankhusus" id="kebutuhankhusus-8" value="Lainnya">
         Lainnya
         </label>
     </div>
@@ -345,7 +345,7 @@
   }
 </script> -->
 
-<div id="forms"></div>
+<!-- <div id="forms"></div> -->
 <div id="formortu">
   <div class="panel-heading">Form Data Orang Tua Santri : Ayah</div>
   <div class="panel-body">
