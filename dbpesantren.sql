@@ -1,17 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
-<<<<<<< HEAD
--- Generation Time: May 20, 2019 at 10:49 AM
+-- Generation Time: May 20, 2019 at 10:53 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
-=======
--- Waktu pembuatan: 20 Bulan Mei 2019 pada 08.00
--- Versi server: 10.1.37-MariaDB
--- Versi PHP: 7.2.13
->>>>>>> master
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbabsen`
+-- Table structure for table `tbabsen`
 --
 
 CREATE TABLE `tbabsen` (
@@ -46,8 +40,7 @@ CREATE TABLE `tbabsen` (
   `TanggalAbsen` date NOT NULL,
   `JuzSaatIni` int(11) NOT NULL,
   `TargetJuz` int(11) NOT NULL,
-  `KeteranganAbsen` text NOT NULL,
-  `StatusMurid` varchar(30) NOT NULL
+  `KeteranganAbsen` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -66,7 +59,7 @@ INSERT INTO `tbabsen` (`IdAbsensi`, `IdSantri`, `IdAyah`, `IdIbu`, `IdWali`, `Ab
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbayah`
+-- Table structure for table `tbayah`
 --
 
 CREATE TABLE `tbayah` (
@@ -91,7 +84,7 @@ CREATE TABLE `tbayah` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbayah`
+-- Dumping data for table `tbayah`
 --
 
 INSERT INTO `tbayah` (`IdAyah`, `NamaLengkapAyah`, `TempatLahirAyah`, `TanggalLahirAyah`, `UsiaAyah`, `PekerjaanAyah`, `PenghasilanAyah`, `NamaJalanAyah`, `RTAyah`, `RWAyah`, `DesaAyah`, `KecamatanAyah`, `KabupatenAyah`, `ProvinsiAyah`, `NoTelpAyah`, `NoWhatsappAyah`, `EmailAyah`, `IdSantri`) VALUES
@@ -102,7 +95,7 @@ INSERT INTO `tbayah` (`IdAyah`, `NamaLengkapAyah`, `TempatLahirAyah`, `TanggalLa
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbibu`
+-- Table structure for table `tbibu`
 --
 
 CREATE TABLE `tbibu` (
@@ -127,7 +120,7 @@ CREATE TABLE `tbibu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbibu`
+-- Dumping data for table `tbibu`
 --
 
 INSERT INTO `tbibu` (`IdIbu`, `NamaLengkapIbu`, `TempatLahirIbu`, `TanggalLahirIbu`, `UsiaIbu`, `PekerjaanIbu`, `PenghasilanIbu`, `NamaJalanIbu`, `RTIbu`, `RWIbu`, `DesaIbu`, `KecamatanIbu`, `KabupatenIbu`, `ProvinsiIbu`, `NoTelpIbu`, `NoWhatsappIbu`, `EmailIbu`, `IdSantri`) VALUES
@@ -138,7 +131,7 @@ INSERT INTO `tbibu` (`IdIbu`, `NamaLengkapIbu`, `TempatLahirIbu`, `TanggalLahirI
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbkelas`
+-- Table structure for table `tbkelas`
 --
 
 CREATE TABLE `tbkelas` (
@@ -149,7 +142,7 @@ CREATE TABLE `tbkelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbkelas`
+-- Dumping data for table `tbkelas`
 --
 
 INSERT INTO `tbkelas` (`IdKelas`, `NamaKelas`, `TahunKelas`, `KeteranganKelas`) VALUES
@@ -159,7 +152,7 @@ INSERT INTO `tbkelas` (`IdKelas`, `NamaKelas`, `TahunKelas`, `KeteranganKelas`) 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbprogram`
+-- Table structure for table `tbprogram`
 --
 
 CREATE TABLE `tbprogram` (
@@ -173,7 +166,7 @@ CREATE TABLE `tbprogram` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbprogram`
+-- Dumping data for table `tbprogram`
 --
 
 INSERT INTO `tbprogram` (`IdProgram`, `ProgramStudi`, `Juz`, `AyatPerhari`, `BulanPerjuz`, `Tahun`, `Keterangan`) VALUES
@@ -184,7 +177,7 @@ INSERT INTO `tbprogram` (`IdProgram`, `ProgramStudi`, `Juz`, `AyatPerhari`, `Bul
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbsantri`
+-- Table structure for table `tbsantri`
 --
 
 CREATE TABLE `tbsantri` (
@@ -210,29 +203,24 @@ CREATE TABLE `tbsantri` (
   `Kecamatan` varchar(100) NOT NULL,
   `Kabupaten` varchar(100) NOT NULL,
   `Provinsi` varchar(100) NOT NULL,
+  `StatusSantri` varchar(30) NOT NULL,
   `IdProgram` int(11) NOT NULL,
   `IdKelas` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbsantri`
+-- Dumping data for table `tbsantri`
 --
 
-<<<<<<< HEAD
 INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `StatusSantri`, `IdProgram`, `IdKelas`) VALUES
 (8, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', 'Denpasar', 'Aman', 1, 1),
 (9, 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', 'Denpasar', 'Aman', 1, 2),
 (10, 'Suhe', 'I Putu Suherman', 1, 'Singaraja', '2019-05-15', 1, 5, 'Indonesia', 'Indigo', 'Lainnya', 'Universitas Udayana', 'Jl. Pulau Nias No.13, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113', 'Lainnya', '777', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 2, 2);
-=======
-INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `IdProgram`, `IdKelas`) VALUES
-(8, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', '', 1, 1),
-(9, 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', '', 1, 2);
->>>>>>> master
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbuser`
+-- Table structure for table `tbuser`
 --
 
 CREATE TABLE `tbuser` (
@@ -240,21 +228,14 @@ CREATE TABLE `tbuser` (
   `Username` varchar(20) NOT NULL,
   `Password` varchar(20) NOT NULL,
   `Nama Lengkap` varchar(50) NOT NULL,
-  `Level` varchar(20) NOT NULL,
+  `Level` int(11) NOT NULL,
   `Status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbuser`
---
-
-INSERT INTO `tbuser` (`IdUser`, `Username`, `Password`, `Nama Lengkap`, `Level`, `Status`) VALUES
-(1, 'admin', 'admin', 'ADMIN', 'admin', 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbwali`
+-- Table structure for table `tbwali`
 --
 
 CREATE TABLE `tbwali` (
@@ -279,7 +260,7 @@ CREATE TABLE `tbwali` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tbwali`
+-- Dumping data for table `tbwali`
 --
 
 INSERT INTO `tbwali` (`IdWali`, `NamaLengkapWali`, `TempatLahirWali`, `TanggalLahirWali`, `UsiaWali`, `PekerjaanWali`, `PenghasilanWali`, `NamaJalanWali`, `RTWali`, `RWWali`, `DesaWali`, `KecamatanWali`, `KabupatenWali`, `ProvinsiWali`, `NoTelpWali`, `NoWhatsappWali`, `EmailWali`, `IdSantri`) VALUES
@@ -291,101 +272,101 @@ INSERT INTO `tbwali` (`IdWali`, `NamaLengkapWali`, `TempatLahirWali`, `TanggalLa
 --
 
 --
--- Indeks untuk tabel `tbabsen`
+-- Indexes for table `tbabsen`
 --
 ALTER TABLE `tbabsen`
   ADD PRIMARY KEY (`IdAbsensi`);
 
 --
--- Indeks untuk tabel `tbayah`
+-- Indexes for table `tbayah`
 --
 ALTER TABLE `tbayah`
   ADD PRIMARY KEY (`IdAyah`);
 
 --
--- Indeks untuk tabel `tbibu`
+-- Indexes for table `tbibu`
 --
 ALTER TABLE `tbibu`
   ADD PRIMARY KEY (`IdIbu`);
 
 --
--- Indeks untuk tabel `tbkelas`
+-- Indexes for table `tbkelas`
 --
 ALTER TABLE `tbkelas`
   ADD PRIMARY KEY (`IdKelas`);
 
 --
--- Indeks untuk tabel `tbprogram`
+-- Indexes for table `tbprogram`
 --
 ALTER TABLE `tbprogram`
   ADD PRIMARY KEY (`IdProgram`);
 
 --
--- Indeks untuk tabel `tbsantri`
+-- Indexes for table `tbsantri`
 --
 ALTER TABLE `tbsantri`
   ADD PRIMARY KEY (`IdSantri`);
 
 --
--- Indeks untuk tabel `tbuser`
+-- Indexes for table `tbuser`
 --
 ALTER TABLE `tbuser`
   ADD PRIMARY KEY (`IdUser`);
 
 --
--- Indeks untuk tabel `tbwali`
+-- Indexes for table `tbwali`
 --
 ALTER TABLE `tbwali`
   ADD PRIMARY KEY (`IdWali`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbabsen`
+-- AUTO_INCREMENT for table `tbabsen`
 --
 ALTER TABLE `tbabsen`
   MODIFY `IdAbsensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `tbayah`
+-- AUTO_INCREMENT for table `tbayah`
 --
 ALTER TABLE `tbayah`
   MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT untuk tabel `tbibu`
+-- AUTO_INCREMENT for table `tbibu`
 --
 ALTER TABLE `tbibu`
   MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `tbkelas`
+-- AUTO_INCREMENT for table `tbkelas`
 --
 ALTER TABLE `tbkelas`
   MODIFY `IdKelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `tbprogram`
+-- AUTO_INCREMENT for table `tbprogram`
 --
 ALTER TABLE `tbprogram`
   MODIFY `IdProgram` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT untuk tabel `tbsantri`
+-- AUTO_INCREMENT for table `tbsantri`
 --
 ALTER TABLE `tbsantri`
   MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT untuk tabel `tbuser`
+-- AUTO_INCREMENT for table `tbuser`
 --
 ALTER TABLE `tbuser`
-  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `tbwali`
+-- AUTO_INCREMENT for table `tbwali`
 --
 ALTER TABLE `tbwali`
   MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
