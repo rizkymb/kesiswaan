@@ -1,3 +1,12 @@
+<?php 
+include 'config.php';
+if($_SESSION['login']=='' )
+      {
+        header("location:../?m=login");
+
+      }
+      $m = $_GET['m'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,14 +55,14 @@
               </ul>
               <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp;Hello 'User'<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>&nbsp Hello <?php echo $_SESSION['username']; ?><span class="caret"></span></a>
                             <ul class="dropdown-menu">
                               <li><a href="#">Profile</a></li>
                               <li><a href="#">Projects</a></li>
                               <li><a href="#">Setting</a></li>
                               <li role="separator" class="divider"></li>
                               <li class="dropdown-header">Action</li>
-                              <li><a href="">Sign Out</a></li>
+                              <li><a href="logout.php">Sign Out</a></li>
                             </ul>
                           </li>
               </ul>
@@ -63,9 +72,6 @@
 
     <div class="container">
       <?php
-      include 'config.php';
-      $m = $_GET['m'];
-
       if ($m=='inputdata') {
         include 'daftarsantri.php';
       }elseif ($m=='inputprogram') {
