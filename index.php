@@ -30,7 +30,7 @@ $m = $_GET['m'];
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="home">Home</a></li>
+                <li class="active"><a href="index.php">Home</a></li>
                 <li><a href="login.php">Login</a></li>
               </ul>
             </div><!--/.nav-collapse -->
