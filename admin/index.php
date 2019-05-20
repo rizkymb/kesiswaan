@@ -18,7 +18,6 @@ if($_SESSION['login']=='' )
     <script src="../assets/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
     <title>Admin Page</title>
     <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
 </head>

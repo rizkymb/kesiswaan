@@ -31,21 +31,7 @@ $m = $_GET['m'];
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="home">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Rekap Santri</a></li>
-                      <li><a href="#">Input Data Santri</a></li>
-                      <li><a href="#">Statistic</a></li>
-                      <li><a href="#">Reminder Setting</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li class="dropdown-header">Secondary Action</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
-                    </ul>
-                  </li>
-                <li><a href="#">Admin Page</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="login.php">Login</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
@@ -65,10 +51,7 @@ $m = $_GET['m'];
         </nav>
 
     <div class="container">
-      <?php
-      if ($m=='login') {
-        include 'login.php';
-      }?>
+     
     </div>
 </body>
 </html>
