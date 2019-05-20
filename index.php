@@ -1,3 +1,7 @@
+<?php 
+include 'admin/config.php';
+$m = $_GET['m'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <title>Admin Page</title>
-    <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
+    <link rel="icon" href="assets/image/component/logo.png" type="image/png">
 </head>
 <body>
         <nav class="navbar navbar-default">
@@ -61,7 +65,10 @@
         </nav>
 
     <div class="container">
-
+      <?php
+      if ($m=='login') {
+        include 'login.php';
+      }?>
     </div>
 </body>
 </html>
