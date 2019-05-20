@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2019 at 10:31 AM
+-- Generation Time: May 20, 2019 at 04:17 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -40,8 +40,7 @@ CREATE TABLE `tbabsen` (
   `TanggalAbsen` date NOT NULL,
   `JuzSaatIni` int(11) NOT NULL,
   `TargetJuz` int(11) NOT NULL,
-  `KeteranganAbsen` text NOT NULL,
-  `StatusMurid` varchar(30) NOT NULL
+  `KeteranganAbsen` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -189,6 +188,7 @@ CREATE TABLE `tbsantri` (
   `Kecamatan` varchar(100) NOT NULL,
   `Kabupaten` varchar(100) NOT NULL,
   `Provinsi` varchar(100) NOT NULL,
+  `StatusSantri` varchar(30) NOT NULL,
   `IdProgram` int(11) NOT NULL,
   `IdKelas` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -197,9 +197,9 @@ CREATE TABLE `tbsantri` (
 -- Dumping data for table `tbsantri`
 --
 
-INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `IdProgram`, `IdKelas`) VALUES
-(8, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', '', 1, 1),
-(9, 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', '', 1, 2);
+INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `StatusSantri`, `IdProgram`, `IdKelas`) VALUES
+(8, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', 'Denpasar', 'Aman', 1, 1),
+(9, 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 0, 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', 'Denpasar', 'Aman', 1, 2);
 
 -- --------------------------------------------------------
 

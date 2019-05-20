@@ -4,6 +4,7 @@
 ?>
 
 <htmL>
+    <p>Klik data santri untuk melihat informasi & mengolah data santri</p>
     <?php 
         while($data = mysqli_fetch_object($query)) {
     ?>
@@ -12,9 +13,9 @@
         <div class="panel-body" style="height:430px;overflow-y: auto;">
             <table class="table table-bordered table-hover">
                 <tr>
-                    <td width="2%" align="center">No. </td>
-                    <td align="center">Nama Santri </td>
-                    <td align="center">Status Santri</td>
+                    <th width="2%" align="center">No. </th>
+                    <th align="center">Nama Santri </th>
+                    <th align="center">Status Santri</th>
                 </tr>
                 <?php 
                 $sql1 = "SELECT * FROM tbsantri WHERE IdKelas = '$data->IdKelas'";
@@ -22,10 +23,10 @@
 
                 $no = 1;
                 while ($data1 = mysqli_fetch_object($query1)) {?>
-                <tr>
-                    <td align="center"><?php echo $no++."."?></td>
-                    <td><?php echo $data1->NamaLengkap?></td>
-                    <td></td>
+                <tr class="rowHref" data-href="index.php?m=absen_detail&ID=<?php echo $data1->IdSantri?>">
+                    <td align="center" width="2%"><?php echo $no++."."?></td>
+                    <td width="70%"><?php echo $data1->NamaLengkap?></td>
+                    <td><?php echo $data1->StatusSantri?></td>
                 </tr>
                 <?php } ?>
             </table>
@@ -33,3 +34,11 @@
     </div>
     <?php } ?>
 </htmL>
+
+<script>
+jQuery(document).ready(function($) {
+    $(".rowHref").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+</script>

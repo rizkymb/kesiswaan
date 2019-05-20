@@ -74,6 +74,8 @@
         include 'absensi.php';
       }elseif ($m=='inputkelas') {
         include 'daftarkelas.php';
+      }elseif ($m=='absen_detail') {
+        include 'absensi_detail.php';
       }else {
         include 'home.php';
       }
