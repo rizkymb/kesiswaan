@@ -45,8 +45,8 @@ if($_SESSION['login']=='' )
                       <li><a href="?m=inputkelas">Input Data Kelas</a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Secondary Action</li>
-                      <li><a href="index.php?m=absensi">Absensi</a></li>
-                      <li><a href="#">One more separated link</a></li>
+                      <li><a href="#">Absensi</a></li>
+                      <li><a href="index.php?m=absensi">Detail Absensi</a></li>
                     </ul>
                   </li>
                 <li><a href="#">Admin Page</a></li>
