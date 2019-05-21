@@ -366,11 +366,11 @@
     <label class="col-md-4 control-label" for="jeniskelamin">Jenis Kelamin</label>
     <div class="col-md-4"> 
         <label class="radio-inline" for="jeniskelamin-0">
-        <input type="radio" name="jeniskelamin" id="jeniskelamin-0" value="1" checked="checked">
+        <input type="radio" name="jeniskelaminayah" id="jeniskelamin-0" value="1" checked="checked">
         Laki - Laki
         </label> 
         <label class="radio-inline" for="jeniskelamin-1">
-        <input type="radio" name="jeniskelamin" id="jeniskelamin-1" value="2">
+        <input type="radio" name="jeniskelaminayah" id="jeniskelamin-1" value="2">
         Perempuan
         </label>
     </div>
@@ -654,23 +654,23 @@
 
 <!-- Multiple Radios -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="penghasilanayah">Penghasilan Bulanan</label>
+  <label class="col-md-4 control-label" for="penghasilanibu">Penghasilan Bulanan</label>
   <div class="col-md-4">
   <div class="radio">
-    <label for="penghasilanayah-0">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-0" value="1 - 3 Juta" checked="checked">
+    <label for="penghasilanibu-0">
+      <input type="radio" name="penghasilanibu" id="penghasilanibu-0" value="1 - 3 Juta" checked="checked">
       1 - 3 Juta
     </label>
 	</div>
   <div class="radio">
-    <label for="penghasilanayah-1">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-1" value="3 - 5 Juta">
+    <label for="penghasilanibu-1">
+      <input type="radio" name="penghasilanibu" id="penghasilanibu-1" value="3 - 5 Juta">
       3 - 5 Juta
     </label>
 	</div>
   <div class="radio">
-    <label for="penghasilanayah-2">
-      <input type="radio" name="penghasilanayah" id="penghasilanayah-2" value="DI Atas 5 Juta">
+    <label for="penghasilanibu-2">
+      <input type="radio" name="penghasilanibu" id="penghasilanibu-2" value="DI Atas 5 Juta">
       DI Atas 5 Juta
     </label>
 	</div>
@@ -943,24 +943,6 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="notelpwali">No. Telepon</label>  
-  <div class="col-md-4">
-  <input id="notelpwali" name="notelpwali" type="text" placeholder="" class="form-control input-md" >
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="nowhatsappwali">No. Whatsapp</label>  
-  <div class="col-md-4">
-  <input id="nowhatsappwali" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" >
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
   <label class="col-md-4 control-label" for="kabupatenwali">Kabupaten</label>  
   <div class="col-md-4">
   <input id="kabupatenwali" name="kabupatenwali" type="text" placeholder="" class="form-control input-md" >
@@ -981,7 +963,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="notelpibu">No. Telepon</label>  
   <div class="col-md-4">
-  <input id="notelpibu" name="notelpwali" type="text" placeholder="" class="form-control input-md" >
+  <input id="notelpwali" name="notelpwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -990,7 +972,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nowhatsappibu">No. Whatsapp</label>  
   <div class="col-md-4">
-  <input id="nowhatsappibu" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" >
+  <input id="nowhatsappwali" name="nowhatsappwali" type="text" placeholder="" class="form-control input-md" >
     
   </div>
 </div>
@@ -999,7 +981,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="emailibu">Email</label>  
   <div class="col-md-4">
-  <input id="emailibu" name="emailibu" type="text" placeholder="" class="form-control input-md" >   
+  <input id="emailwali" name="emailwali" type="text" placeholder="" class="form-control input-md" >   
   </div>
 </div>
 </div>

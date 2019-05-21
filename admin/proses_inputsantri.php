@@ -87,23 +87,27 @@ $data=mysqli_fetch_object($q);
 
 $idsantri = $data->IdSantri;
 
+if ($namalengkapayah != '' || $namalengkapibu != ''){
 $sqlayah = "INSERT INTO tbayah ( NamaLengkapAyah, TempatLahirAyah, TanggalLahirAyah, UsiaAyah, PekerjaanAyah, PenghasilanAyah, NamaJalanAyah, RTAyah, RWAyah, DesaAyah, KecamatanAyah, KabupatenAyah, ProvinsiAyah, NoTelpAyah, NoWhatsappAyah, EmailAyah, IdSantri) 
 VALUES ('$namalengkapayah','$tempatlahirayah','$tanggallahirayah','$usiaayah','$pekerjaanayah','$penghasilanayah','$namajalanayah','$rtayah','$rwayah','$desaayah','$kecamatanayah','$kabupatenayah','$provinsiayah','$notelpayah','$nowhatsappayah','$emailayah', '$idsantri')";
 
 $sqlibu = "INSERT INTO tbibu ( NamaLengkapIbu, TempatLahirIbu, TanggalLahirIbu, UsiaIbu, PekerjaanIbu, PenghasilanIbu, NamaJalanIbu, RTIbu, RWIbu, DesaIbu, KecamatanIbu, KabupatenIbu, ProvinsiIbu, NoTelpIbu, NoWhatsappIbu, EmailIbu, IdSantri) 
 VALUES ('$namalengkapibu','$tempatlahiribu','$tanggallahiribu','$usiaibu','$pekerjaanibu','$penghasilanibu','$namajalanibu','$rtibu','$rwibu','$desaibu','$kecamatanibu','$kabupatenibu','$provinsiibu','$notelpibu','$nowhatsappibu','$emailibu', '$idsantri')";
 
-
-$sqlwali = "INSERT INTO tbwali ( NamaLengkapWali, TempatLahirWali, TanggalLahirWali, UsiaWali, PekerjaanWali, PenghasilanWali, NamaJalanWali, RTWali, RWWali, DesaWali, KecamatanWali, KabupatenWali, ProvinsiWali, NoTelpWali, NoWhatsappWali, EmailWali, IdSantri) 
-VALUES ('$namalengkapwali','$tempatlahirwali','$tanggallahirwali','$usiawali','$pekerjaanwali','$penghasilanwali','$namajalanwali','$rtwali','$rwwali','$desawali','$kecamatanwali','$kabupatenwali','$provinsiwali','$notelpwali','$nowhatsappwali','$emailwali', '$idsantri')";
-
 $ayah=mysqli_query($conn, $sqlayah);
 
 $ibu=mysqli_query($conn, $sqlibu);
 
+}elseif ($namalengkapayah == '' || $namalengkapibu == ''){
+
+$sqlwali = "INSERT INTO tbwali ( NamaLengkapWali, TempatLahirWali, TanggalLahirWali, UsiaWali, PekerjaanWali, PenghasilanWali, NamaJalanWali, RTWali, RWWali, DesaWali, KecamatanWali, KabupatenWali, ProvinsiWali, NoTelpWali, NoWhatsappWali, EmailWali, IdSantri) 
+VALUES ('$namalengkapwali','$tempatlahirwali','$tanggallahirwali','$usiawali','$pekerjaanwali','$penghasilanwali','$namajalanwali','$rtwali','$rwwali','$desawali','$kecamatanwali','$kabupatenwali','$provinsiwali','$notelpwali','$nowhatsappwali','$emailwali', '$idsantri')";
+
 $wali=mysqli_query($conn, $sqlwali);
 
-if($anak){
+}
+
+if($anak && ($ayah && $ibu) || $wali){
     echo "<script>alert('Santri Berhasil Diinput !');
     location.href='index.php?m=inputsantri';
     </script>";
