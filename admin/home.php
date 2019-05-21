@@ -1,3 +1,14 @@
+<?php
+include 'config.php';
+
+$querylaki = mysqli_query($conn, "SELECT COUNT(IdSantri) AS totallaki FROM tbsantri WHERE JenisKelamin = '2'");
+$queryperempuan = mysqli_query($conn, "SELECT COUNT(IdSantri) AS totalperempuan FROM tbsantri WHERE JenisKelamin = '1'");
+
+$datalaki = mysqli_fetch_object($querylaki);
+$dataperempuan = mysqli_fetch_object($queryperempuan);
+
+?>
+
 <center>
     <legend>Selamat Datang</legend>
     <br>
@@ -8,9 +19,9 @@
         <div class="panel panel-primary">
             <div class="panel-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Jumlah Siswa Siswi</div>
             <div class="panel-body">
-                <p>Laki Laki :</p>
-                <p>Peremupuan :</p>
-                <p>Total :</p>
+                <p>Laki Laki : <?php echo $datalaki->totallaki; ?></p>
+                <p>Peremupuan : <?php echo $dataperempuan->totalperempuan; ?></p>
+                <p>Total : <?php $totalsantri = $datalaki->totallaki + $dataperempuan->totalperempuan ; echo $totalsantri?></p>
             </div>
         </div>
     </div>

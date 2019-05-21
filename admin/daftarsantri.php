@@ -68,11 +68,11 @@
     <label class="col-md-4 control-label" for="jeniskelamin">Jenis Kelamin</label>
     <div class="col-md-4"> 
         <label class="radio-inline" for="jeniskelamin-0">
-        <input type="radio" name="jeniskelamin" id="jeniskelamin-0" value="0" checked="checked">
+        <input type="radio" name="jeniskelamin" id="jeniskelamin-0" value="1" checked="checked">
         Laki - Laki
         </label> 
         <label class="radio-inline" for="jeniskelamin-1">
-        <input type="radio" name="jeniskelamin" id="jeniskelamin-1" value="1">
+        <input type="radio" name="jeniskelamin" id="jeniskelamin-1" value="2">
         Perempuan
         </label>
     </div>
