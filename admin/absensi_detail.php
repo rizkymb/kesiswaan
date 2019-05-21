@@ -158,9 +158,10 @@ if ($data->JenisKelamin == '1'){
                 </tr>
                 <?php } ?>
                 <tr>
-                    <td colspan="7" style="padding:20px; hover:none;"><p align="right"><button id="selengkapnya" name="selengkapnya" class="btn btn-success btn-xs" style="padding:5px;">Lihat Data Selengkapnya</button></p></td>
+                    <td colspan="7" style="padding:20px; hover:none;"><p align="right"><a href="index.php?m=absenlengkap&ID=<?php echo $ID?>" id="selengkapnya" name="selengkapnya" class="btn btn-success btn-xs" style="padding:5px;">Lihat Data Selengkapnya</button></p></td>
                 </tr>
             </table>
   </div>
+</form>
 </div>
 </html>

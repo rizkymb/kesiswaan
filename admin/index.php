@@ -81,6 +81,8 @@ if($_SESSION['login']=='' )
         include 'daftarkelas.php';
       }elseif ($m=='absen_detail') {
         include 'absensi_detail.php';
+      }elseif ($m=='absenlengkap') {
+        include 'absensi_lengkap.php';
       }else {
         include 'home.php';
       }
