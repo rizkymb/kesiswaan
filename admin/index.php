@@ -22,7 +22,7 @@ if($_SESSION['login']=='' )
     <title>Admin Page</title>
     <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
 </head>
-<body style="background-color: rgb(238, 238, 238);">
+<body style="background-color: rgb(247, 247, 247);">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -46,7 +46,7 @@ if($_SESSION['login']=='' )
                       <li><a href="?m=inputkelas">Input Data Kelas</a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Secondary Action</li>
-                      <li><a href="#">Absensi</a></li>
+                      <li><a href="index.php?m=dataabsen">Absensi</a></li>
                       <li><a href="index.php?m=absensi">Detail Absensi</a></li>
                       <li><a href="#">Data Santri</a></li>
                       <li><a href="#">Data Kelas</a></li>
@@ -84,6 +84,8 @@ if($_SESSION['login']=='' )
         include 'daftarkelas.php';
       }elseif ($m=='absen_detail') {
         include 'absensi_detail.php';
+      }elseif ($m=='dataabsen') {
+        include 'dataabsen.php';
       }else {
         include 'home.php';
       }
