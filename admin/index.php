@@ -18,10 +18,11 @@ if($_SESSION['login']=='' )
     <script src="../assets/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
     <title>Admin Page</title>
     <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
 </head>
-<body>
+<body style="background-color: rgb(238, 238, 238);">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
@@ -47,6 +48,8 @@ if($_SESSION['login']=='' )
                       <li class="dropdown-header">Secondary Action</li>
                       <li><a href="#">Absensi</a></li>
                       <li><a href="index.php?m=absensi">Detail Absensi</a></li>
+                      <li><a href="#">Data Santri</a></li>
+                      <li><a href="#">Data Kelas</a></li>
                     </ul>
                   </li>
                 <li><a href="#">Admin Page</a></li>
@@ -86,5 +89,6 @@ if($_SESSION['login']=='' )
       }
       ?>
     </div>
+    
 </body>
 </html>
