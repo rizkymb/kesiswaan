@@ -19,6 +19,10 @@ if($_SESSION['login']=='' )
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/startmin.css" rel="stylesheet">
+    <link href="../assets/css/morris.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        
     <title>Admin Page</title>
     <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
 </head>
@@ -36,7 +40,7 @@ if($_SESSION['login']=='' )
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -96,3 +100,4 @@ if($_SESSION['login']=='' )
     
 </body>
 </html>
+

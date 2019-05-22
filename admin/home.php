@@ -10,50 +10,107 @@ $dataperempuan = mysqli_fetch_object($queryperempuan);
 ?>
 
 <center>
-    <legend>Selamat Datang</legend>
+    <legend>أهلا وسهلا</legend>
     <br>
 </center>
-
 <div class="row">
-    <div class="col-md-3">
-        <div class="panel panel-primary">
-            <div class="panel-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Jumlah Siswa Siswi</div>
-            <div class="panel-body">
-                <p>Laki Laki : <?php echo $datalaki->totallaki; ?></p>
-                <p>Peremupuan : <?php echo $dataperempuan->totalperempuan; ?></p>
-                <p>Total : <?php $totalsantri = $datalaki->totallaki + $dataperempuan->totalperempuan ; echo $totalsantri?></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-            <div class="panel panel-primary">
-                    <div class="panel-heading"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Jumlah Kelas</div>
-                    <div class="panel-body">
-                            <p>Jumlah Golongan :</p>
-                            <p>Kelas Khusus :</p>
-                            <p>Total :</p>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="glyphicon glyphicon-user fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge"><?php $totalsantri = $datalaki->totallaki + $dataperempuan->totalperempuan ; echo $totalsantri?></div>
+                                            <div>Total Murid</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="panel-footer">
+                                        <span class="pull-left">
+                                        Laki Laki : <b><?php echo $datalaki->totallaki; ?></b>
+                                        </span>
+                                        <span class="pull-right">
+                                        Perempuan : <b><?php echo $dataperempuan->totalperempuan; ?></b>
+                                        </span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                            </div>
                         </div>
-                </div>
-    </div>
-    <div class="col-md-3">
-            <div class="panel panel-primary">
-                    <div class="panel-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Jumlah Staff</div>
-                    <div class="panel-body">
-                            <p>Jumlah Staff :</p>
-                            <p>Jumlah Pengajar :</p>
-                            <p>Total :</p>
-                        </div>
-                </div>
-    </div>
-    <div class="col-md-3">
-            <div class="panel panel-primary">
-                    <div class="panel-heading"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Jumlah Tahfidz</div>
-                    <div class="panel-body">
-                            <p>Jumlah Hafidz Laki Laki :</p>
-                            <p>Jumlah Hafidz Perempuan :</p>
-                            <p>Total :</p>
-                        </div>
-                </div>
-    </div>    
-</div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="glyphicon glyphicon-home fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">12</div>
+                                            <div>Total Kelas</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="panel-footer">
+                                        <span class="pull-left">
+                                        Golongan :
+                                        </span>
+                                        <span class="pull-right">
+                                        Khusus :
+                                        </span>
 
+                                        <div class="clearfix"></div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="glyphicon glyphicon-briefcase fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">124</div>
+                                            <div>Total Staff</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="panel-footer">
+                                        <span class="pull-left">
+                                        Staff :
+                                        </span>
+                                        <span class="pull-right">
+                                        Pengajar :
+                                        </span>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="glyphicon glyphicon-education fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">13</div>
+                                            <div>Total Hafiz</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="panel-footer">
+                                        <span class="pull-left">
+                                        Hafiz :
+                                        </span>
+                                        <span class="pull-right">
+                                        Hafizah :
+                                        </span>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>

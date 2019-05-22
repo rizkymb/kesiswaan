@@ -6,21 +6,44 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="../assets/css/startmin.css" rel="stylesheet">
+    <link href="../assets/css/morris.css" rel="stylesheet">
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <title>Admin Page</title>
     <link rel="icon" href="assets/image/component/logo.png" type="image/png">
 </head>
 
 <body>
-  <div class="container">
-<form class="form-horizontal" action="admin/ceklogin.php" method="post">
-  <br>
-  <input type="text" class="form-control" id="inputEmail" placeholder="Username" name="user">
-  <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="pass">
-  <br>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <button class="btn btn-danger"><a href="index.php" style="text-decoration: none;color:white;">Cancel</a></button>  
-</form>
+  <br><br>
+<div class="container">
+<form action="admin/ceklogin.php" method="post">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-panel panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Please Sign In</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form role="form">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="Username" name="user" autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="pass">
+                                    </div>
+                                    <button type="submit" class="btn btn-lg btn-success btn-block">Submit</button>
+                                    <br>
+                                    <a href="index.php" style="text-decoration: none;color:tomato;"><span class="glyphicon glyphicon-arrow-left"></span> Go Back</a>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </form>
 </div>
+
 </body>
 
