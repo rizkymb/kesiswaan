@@ -1,15 +1,29 @@
+<?php 
+include 'config.php';
+
+$query = mysqli_query($conn, "SELECT IdKelas, NamaKelas FROM tbkelas");
+
+?>
 <center><legend>Tampil Absen</legend></center>
 
-<form class="" action="" method="post">
+<form class="form" action="" method="post">
    <table align="center">
        <tr>
            <td>
-                <input type="text" placeholder="Masukan Nama Kelas" name="" size="40">
+                <label>Pilih Kelas</label>
+                <select name="kelas" class="form-control">
+                    <?php 
+                    while ($data = mysqli_fetch_object($query)){
+                    ?>
+                    <option value="<?php echo $data->IdKelas?>"><?php echo $data->NamaKelas?></option>
+                    <?php } ?>
+                </select>
            </td>
        </tr>
        <tr>
            <td style="padding-top: 8px;">
-                <input type="date" name="" size="40">
+                <label>Tanggal Absen</label>
+                <input type="date" class="form-control" name="" size="40">
            </td>
        </tr>
        <tr>
