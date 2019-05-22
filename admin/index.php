@@ -17,6 +17,7 @@ if($_SESSION['login']=='' )
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../assets/chartjs.js/Chart.js"></script>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/startmin.css" rel="stylesheet">
@@ -26,7 +27,7 @@ if($_SESSION['login']=='' )
     <title>Admin Page</title>
     <link rel="icon" href="../assets/image/component/logo.png" type="image/png">
 </head>
-<body style="background-color: rgb(247, 247, 247);">
+<body style="background-color: rgb(255, 255, 255);">
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
