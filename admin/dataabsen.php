@@ -6,7 +6,8 @@ $query = mysqli_query($conn, "SELECT IdKelas, NamaKelas FROM tbkelas");
 ?>
 <center><legend>Tampil Absen</legend></center>
 
-<form class="form" action="" method="post">
+<form class="form">
+    <input type="hidden" name="m" value="absensi_quick">
    <table align="center">
        <tr>
            <td>
@@ -23,7 +24,7 @@ $query = mysqli_query($conn, "SELECT IdKelas, NamaKelas FROM tbkelas");
        <tr>
            <td style="padding-top: 8px;">
                 <label>Tanggal Absen</label>
-                <input type="date" class="form-control" name="" size="40" value="<?php echo date('Y-m-d')?>">
+                <input type="date" class="form-control" name="tglabsen" size="40" value="<?php echo date('Y-m-d')?>">
            </td>
        </tr>
        <tr>
@@ -32,9 +33,6 @@ $query = mysqli_query($conn, "SELECT IdKelas, NamaKelas FROM tbkelas");
            </td>
        </tr>
    </table>
-   
-
-  
   </form>
 
   

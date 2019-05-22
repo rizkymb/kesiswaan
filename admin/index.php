@@ -93,6 +93,8 @@ if($_SESSION['login']=='' )
         include 'absensi_lengkap.php';
       }elseif ($m=='dataabsen') {
         include 'dataabsen.php';
+      }elseif ($m=='absensi_quick') {
+        include 'absensi_quick.php';
       }else {
         include 'home.php';
       }
