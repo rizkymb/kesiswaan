@@ -13,9 +13,10 @@
         <div class="panel-body" style="height:430px;overflow-y: auto;">
             <table class="table table-bordered table-hover">
                 <tr>
-                    <th width="2%" align="center">No. </th>
-                    <th align="center">Nama Santri </th>
-                    <th align="center">Status Santri</th>
+                    <th width="2%" align="center" style="text-align: center">No. </th>
+                    <th align="center" style="text-align: center">NIS</th>
+                    <th align="center" style="text-align: center">Nama Santri </th>
+                    <th align="center" style="text-align: center">Status Santri</th>
                 </tr>
                 <?php 
                 $sql1 = "SELECT * FROM tbsantri WHERE IdKelas = '$data->IdKelas'";
@@ -25,8 +26,9 @@
                 while ($data1 = mysqli_fetch_object($query1)) {?>
                 <tr class="rowHref" data-href="index.php?m=absen_detail&ID=<?php echo $data1->IdSantri?>">
                     <td align="center" width="2%"><?php echo $no++."."?></td>
+                    <td align="center" width="15%"><?php echo $data1->NIS?></td>
                     <td width="70%"><?php echo $data1->NamaLengkap?></td>
-                    <td><?php echo $data1->StatusSantri?></td>
+                    <td style="text-align: center"><?php echo $data1->StatusSantri?></td>
                 </tr>
                 <?php } ?>
             </table>

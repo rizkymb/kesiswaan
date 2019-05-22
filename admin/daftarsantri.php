@@ -33,19 +33,29 @@
           <div class="form-group">
             <label class="col-md-4 control-label" for="namalengkap">Pilih Kelas</label>
             <div class="col-md-4">
-              <select class="form-control" name="pilihkelas" id="pilihkelas">
-                <option value="">Pilih Kelas</option>
+              <select class="form-control" name="pilihkelas" id="pilihkelas" onchange="nisUpdate()">
                 <?php 
-      include 'config.php';
-      $sql="select * from tbkelas";
-      $query=mysqli_query($conn,$sql);
-      while ($data=mysqli_fetch_object($query)) {
-      ?>
+                $sql="select * from tbkelas";
+                $query=mysqli_query($conn,$sql);
+                while ($data=mysqli_fetch_object($query)) {?>
                 <option value="<?php echo $data->IdKelas ?>"><?php echo $data->NamaKelas; ?></option>
                 <?php }?>
               </select>
             </div>
           </div>
+
+      <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="kabupatenayah">NIS</label>
+                    <div class="col-md-4">
+                      <input id="nis" name="nis" type="text" placeholder="" class="form-control input-md" value="<?php
+                        $count = mysqli_query($conn, "SELECT COUNT(IdSantri) AS JumlahSantri FROM tbsantri");
+                        $datacount = mysqli_fetch_object($count);
+                        $jumlahsantri = $datacount->JumlahSantri + 1;
+                      ?>" readonly>
+
+                    </div>
+                  </div>
 
           <!-- Text input-->
           <div class="form-group">
@@ -374,11 +384,11 @@
                     <label class="col-md-4 control-label" for="jeniskelamin">Jenis Kelamin</label>
                     <div class="col-md-4">
                       <label class="radio-inline" for="jeniskelamin-0">
-                        <input type="radio" name="jeniskelaminayah" id="jeniskelamin-0" value="1" checked="checked">
+                        <input type="radio" name="jeniskelaminayah" id="jeniskelaminayah-0" value="1" checked="checked">
                         Laki - Laki
                       </label>
                       <label class="radio-inline" for="jeniskelamin-1">
-                        <input type="radio" name="jeniskelaminayah" id="jeniskelamin-1" value="2">
+                        <input type="radio" name="jeniskelaminayah" id="jeniskelaminayah-1" value="2">
                         Perempuan
                       </label>
                     </div>
@@ -391,7 +401,7 @@
                       <input id="tempatlahirayah" name="tempatlahirayah" type="text" placeholder=""
                         class="form-control input-md">
                       <input id="tgllahirayah" name="tgllahirayah" type="date" placeholder=""
-                        class="form-control input-md" required="">
+                        class="form-control input-md" >
                     </div>
                   </div>
 
@@ -602,8 +612,7 @@
                   <div class="col-md-4">
                     <input id="tempatlahiribu" name="tempatlahiribu" type="text" placeholder=""
                       class="form-control input-md">
-                    <input id="tgllahiribu" name="tgllahiribu" type="date" placeholder="" class="form-control input-md"
-                      required="">
+                    <input id="tgllahiribu" name="tgllahiribu" type="date" placeholder="" class="form-control input-md">
                   </div>
                 </div>
 
@@ -1031,3 +1040,24 @@
 </body>
 
 </html>
+
+<script>
+function nisUpdate() {
+  var d = new Date();
+  var n = d.getFullYear();
+  var select = document.getElementById('pilihkelas');
+  var kelas = select.value;
+  document.getElementById("nis").value = n+"-"+("0000" + kelas).slice(-4)+"-<?php echo str_pad($jumlahsantri, 4, '0', STR_PAD_LEFT)?>";
+  // document.getElementById("myBtn").value = "BMW";
+}
+
+$(document).ready(function() {
+  var d = new Date();
+  var n = d.getFullYear();
+  var select = document.getElementById('pilihkelas');
+  var kelas = select.value;
+  document.getElementById("nis").value = n+"-"+("0000" + kelas).slice(-4)+"-<?php echo str_pad($jumlahsantri, 4, '0', STR_PAD_LEFT)?>";
+  
+   });
+
+</script>

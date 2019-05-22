@@ -1,8 +1,8 @@
 <?php
 include 'config.php';
 
-$querylaki = mysqli_query($conn, "SELECT COUNT(IdSantri) AS totallaki FROM tbsantri WHERE JenisKelamin = '2'");
-$queryperempuan = mysqli_query($conn, "SELECT COUNT(IdSantri) AS totalperempuan FROM tbsantri WHERE JenisKelamin = '1'");
+$querylaki = mysqli_query($conn, "SELECT COUNT(IdSantri) AS totallaki FROM tbsantri WHERE JenisKelamin = '1'");
+$queryperempuan = mysqli_query($conn, "SELECT COUNT(IdSantri) AS totalperempuan FROM tbsantri WHERE JenisKelamin = '2'");
 
 $datalaki = mysqli_fetch_object($querylaki);
 $dataperempuan = mysqli_fetch_object($queryperempuan);

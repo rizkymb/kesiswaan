@@ -23,7 +23,7 @@ $query = mysqli_query($conn, "SELECT IdKelas, NamaKelas FROM tbkelas");
        <tr>
            <td style="padding-top: 8px;">
                 <label>Tanggal Absen</label>
-                <input type="date" class="form-control" name="" size="40">
+                <input type="date" class="form-control" name="" size="40" value="<?php echo date('Y-m-d')?>">
            </td>
        </tr>
        <tr>

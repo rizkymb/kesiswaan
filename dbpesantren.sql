@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 20, 2019 at 10:53 AM
+-- Generation Time: May 22, 2019 at 11:28 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -50,11 +50,11 @@ CREATE TABLE `tbabsen` (
 INSERT INTO `tbabsen` (`IdAbsensi`, `IdSantri`, `IdAyah`, `IdIbu`, `IdWali`, `Absen`, `SetorAyat`, `Surat`, `TanggalAbsen`, `JuzSaatIni`, `TargetJuz`, `KeteranganAbsen`) VALUES
 (1, 10, 6, 7, 6, '1', 2, 3, '2019-05-20', 2, 3, 'Mantep Kik'),
 (2, 10, 6, 7, 6, '1', 2, 3, '2019-05-21', 2, 3, 'Mantep Lagi Kik'),
-(3, 10, 6, 7, 6, '1', 2, 3, '2019-05-21', 2, 3, 'Mantep Lagi Kik'),
 (4, 10, 6, 7, 6, '2', 0, 0, '2019-05-22', 2, 3, 'Sakit tifus'),
 (5, 10, 6, 7, 6, '2', 0, 0, '2019-05-23', 2, 3, 'Sakit TBC'),
 (7, 10, 6, 7, 6, '2', 0, 0, '2019-05-24', 2, 3, 'Masih Sakit tifus, malah nambah db'),
-(8, 10, 6, 7, 6, '4', 0, 0, '2019-05-25', 1, 3, 'Yee malah mbolos');
+(8, 10, 6, 7, 6, '4', 0, 0, '2019-05-25', 1, 3, 'Yee malah mbolos'),
+(9, 10, 6, 7, 0, '1', 3, 3, '2019-05-26', 3, 3, 'Mantap');
 
 -- --------------------------------------------------------
 
@@ -90,7 +90,9 @@ CREATE TABLE `tbayah` (
 INSERT INTO `tbayah` (`IdAyah`, `NamaLengkapAyah`, `TempatLahirAyah`, `TanggalLahirAyah`, `UsiaAyah`, `PekerjaanAyah`, `PenghasilanAyah`, `NamaJalanAyah`, `RTAyah`, `RWAyah`, `DesaAyah`, `KecamatanAyah`, `KabupatenAyah`, `ProvinsiAyah`, `NoTelpAyah`, `NoWhatsappAyah`, `EmailAyah`, `IdSantri`) VALUES
 (4, 'Raiden', 'God Realm', '0000-00-00', '124', 'Lainnya', '1 - 3 Juta', 'Jl. Elder God', '1', '2', 'Shaolin Temple', 'Lin Kuei', 'Jinsei', 'Earthrealm', '12121', '121221', 'raiden@gmail.com', 8),
 (5, 'Naruto Uzumaki', 'Konoha', '0000-00-00', '34', 'Lainnya', 'DI Atas 5 Juta', 'Jalan Sunagakure No. 2', '1', '1', 'Konoha', 'Konoha', 'Konoha', 'Konoha', '1111111', '1111111', 'naruto@gmail.com', 9),
-(6, 'I Nengah Suherman', 'Denpasar', '0000-00-00', '32', 'TNI / Polri', '1 - 3 Juta', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '081936669580', '081936669580', 'nyomansuhe@gmail.com', 10);
+(6, 'I Nengah Suherman', 'Denpasar', '0000-00-00', '32', 'TNI / Polri', '1 - 3 Juta', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '081936669580', '081936669580', 'nyomansuhe@gmail.com', 10),
+(7, 'Hidan', 'Desa Yigakure', '0000-00-00', '40', 'Lainnya', 'DI Atas 5 Juta', 'Jl. K.H. Mas Mansyur No.Kav.35', '12', '11', 'Tanahabang', 'Karet Tengsin', 'Jakarta Pusat', 'DKI Jakarta', '1111111', '1111111', 'hidan@gmail.com', 11),
+(8, 'Iroh', 'Negara Api', '0000-00-00', '54', 'TNI / Polri', 'Di Atas 5 Juta', 'Jl. S Parman Perum BCALand Kediri Blok D No. 41', '1', '1', 'Abian Tuwung', 'Kediri', 'Tabanan', 'Bali', '0188287', '0188287', 'iroh@email.co', 14);
 
 -- --------------------------------------------------------
 
@@ -126,7 +128,9 @@ CREATE TABLE `tbibu` (
 INSERT INTO `tbibu` (`IdIbu`, `NamaLengkapIbu`, `TempatLahirIbu`, `TanggalLahirIbu`, `UsiaIbu`, `PekerjaanIbu`, `PenghasilanIbu`, `NamaJalanIbu`, `RTIbu`, `RWIbu`, `DesaIbu`, `KecamatanIbu`, `KabupatenIbu`, `ProvinsiIbu`, `NoTelpIbu`, `NoWhatsappIbu`, `EmailIbu`, `IdSantri`) VALUES
 (5, 'Hinata Hyuuga', 'Konoha', '0000-00-00', '24', 'Lainnya', '', 'Konoha Barat', '1', '2', 'Desa Daun', 'Konoha Barat', 'Konoha', 'Ninja', '12121', '121212', '', 8),
 (6, 'Hinata Hyuuga', 'Konoha', '0000-00-00', '29', 'Ibu Rumah Tangga', '', 'Jalan Sunagakure No. 2', '1', '1', 'Konoha', 'Konoha', 'Konoha', 'Konoha', '1111', '1111', '', 9),
-(7, 'Ni Kadek Suherman', 'Denpasar', '0000-00-00', '29', 'Ibu Rumah Tangga', '', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '081292829182', '081292829182', '', 10);
+(7, 'Ni Kadek Suherman', 'Denpasar', '0000-00-00', '29', 'Ibu Rumah Tangga', '', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '081292829182', '081292829182', '', 10),
+(8, 'Uthgerd Unbroken', 'Whiterun', '0000-00-00', '35', 'Lainnya', '', 'Cloud District No. 4', '1', '1', 'Cloud District', 'Whiterun', 'Imperial', 'Skyrim', '1121212', '12121212', '', 11),
+(9, 'GLX-21 War Unit', 'Colorado', '0000-00-00', '12', 'Lainnya', 'DI Atas 5 Juta', 'Jl. S Parman Perum BCALand Kediri Blok D No. 41', '1', '1', 'Abian Tuwung', 'Kediri', 'Tabanan', 'Bali', '1212121', '1211221', 'bot@gmail.com', 14);
 
 -- --------------------------------------------------------
 
@@ -182,6 +186,8 @@ INSERT INTO `tbprogram` (`IdProgram`, `ProgramStudi`, `Juz`, `AyatPerhari`, `Bul
 
 CREATE TABLE `tbsantri` (
   `IdSantri` int(11) NOT NULL,
+  `NIS` varchar(20) NOT NULL,
+  `TglInput` date NOT NULL,
   `Nama` varchar(50) NOT NULL,
   `NamaLengkap` varchar(100) NOT NULL,
   `JenisKelamin` int(2) NOT NULL,
@@ -212,10 +218,17 @@ CREATE TABLE `tbsantri` (
 -- Dumping data for table `tbsantri`
 --
 
-INSERT INTO `tbsantri` (`IdSantri`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `StatusSantri`, `IdProgram`, `IdKelas`) VALUES
-(8, 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', 'Denpasar', 'Aman', 1, 1),
-(9, 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', 'Denpasar', 'Aman', 1, 2),
-(10, 'Suhe', 'I Putu Suherman', 1, 'Singaraja', '2019-05-15', 1, 5, 'Indonesia', 'Indigo', 'Lainnya', 'Universitas Udayana', 'Jl. Pulau Nias No.13, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113', 'Lainnya', '777', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 2, 2);
+INSERT INTO `tbsantri` (`IdSantri`, `NIS`, `TglInput`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `StatusSantri`, `IdProgram`, `IdKelas`) VALUES
+(8, '2019-0002-0001', '2019-05-22', 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', 'Denpasar', 'Aman', 1, 1),
+(9, '2019-0002-0002', '2019-05-22', 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', 'Denpasar', 'Aman', 1, 2),
+(10, '2019-0002-0003', '2019-05-22', 'Suhe', 'I Putu Suherman', 1, 'Singaraja', '2019-05-15', 1, 5, 'Indonesia', 'Indigo', 'Lainnya', 'Universitas Udayana', 'Jl. Pulau Nias No.13, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113', 'Lainnya', '777', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 2, 2),
+(11, '2019-0002-0004', '2019-05-22', 'Awkarin', 'Karin Novilda', 2, 'Jakarta', '2000-01-01', 1, 2, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '121122111111', 'Jl. K.H. Mas Mansyur No.Kav.35', '12', '11', 'Tanahabang', 'Jakarta Pusat', 'Karet Tengsin', 'DKI Jakarta', 'Aman', 3, 1),
+(12, '2019-0002-0005', '2019-05-22', 'Bolo', 'Bolo the Traveler', 1, 'The Dome', '2019-05-03', 1, 1, 'Indonesia', 'Tidak Ada', 'Lainnya', 'Dome Institute of Shadow Research', 'The Dome, Northern Wing of The Dome Number 30', 'Lainnya', '12122112', 'Hidden Compound ', '1', '1', 'Unknown', 'Unknown', 'Unknown', 'Dynasty', 'Aman', 1, 2),
+(13, '2019-0002-0006', '2019-05-22', 'Rizky', 'Rizky Mochtar Buchori', 1, 'Surakarta', '2000-04-10', 3, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Orang Tua', '1212121221', 'Jl. Badak Agung No. 4', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 2),
+(14, '2019-0001-0007', '2019-05-22', 'Diksi', 'I Putu Diksi Erlangga', 1, 'Denpasar', '2000-05-20', 1, 2, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Orang Tua', '1212121221', 'Jl. S Parman Perum BCALand Kediri Blok D No. 41', '1', '1', 'Abian Tuwung', 'Tabanan', 'Kediri', 'Bali', 'Aman', 1, 1),
+(15, '2019-0001-0008', '2019-05-22', 'Husen', 'Muhammad Abdul Husen', 1, 'Malang', '2000-06-06', 2, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK Negeri 1 Denpasar', 'Jl. Cokroaminoto No.84, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116', 'Wali', '1212112', 'Jl Danau Tamblingan 162', '1', '1', 'Sanur', 'Denpassar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 1),
+(16, '2019-0002-0009', '2019-05-22', 'Mega', 'MegaÂ CahyaÂ Kusuma', 2, 'Banyuwangi', '2019-05-16', 1, 3, 'Indonesia', 'Indigo', 'SMA / SMK / MA', 'SMK PGRI 3 Denpasar', 'TARA, Gg. Dewi Uma No.7, Panjer, Kec. Denpasar Sel., Kota Denpasar, Bali 80235', 'Wali', '1212121221', 'Pondok Karya, Pondok Aren, Banten', '1', '1', 'Pondok karya', 'Banten', 'Serang', 'Jawa Barat', 'Aman', 1, 2),
+(17, '2019-0001-0010', '2019-05-22', 'Fanny', 'CahayaÂ FannyÂ Darmadi', 2, 'Pontianak', '2008-02-05', 3, 4, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Wali', '122121212', 'Jl. Tukad Citarum No.44', '1', '1', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -231,6 +244,13 @@ CREATE TABLE `tbuser` (
   `Level` int(11) NOT NULL,
   `Status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbuser`
+--
+
+INSERT INTO `tbuser` (`IdUser`, `Username`, `Password`, `Nama Lengkap`, `Level`, `Status`) VALUES
+(1, 'admin', 'admin', 'DIksi Erlangga', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -264,8 +284,11 @@ CREATE TABLE `tbwali` (
 --
 
 INSERT INTO `tbwali` (`IdWali`, `NamaLengkapWali`, `TempatLahirWali`, `TanggalLahirWali`, `UsiaWali`, `PekerjaanWali`, `PenghasilanWali`, `NamaJalanWali`, `RTWali`, `RWWali`, `DesaWali`, `KecamatanWali`, `KabupatenWali`, `ProvinsiWali`, `NoTelpWali`, `NoWhatsappWali`, `EmailWali`, `IdSantri`) VALUES
-(5, '', '', '0000-00-00', '', 'Ibu Rumah Tangga', '1 - 3 Juta', '', '', '', '', '', '', '', '', '', '', 9),
-(6, '', '', '0000-00-00', '', 'Ibu Rumah Tangga', '1 - 3 Juta', '', '', '', '', '', '', '', '', '', '', 10);
+(8, 'Master Galen', 'Dynasty', '0000-00-00', '100', 'Guru / Mubaligh', 'DI Atas 5 Juta', 'Jl Gn Kapur 5 No 27', '1', '1', 'Monang Maning', 'Denpasar Barat', 'Denpasar', 'Bali', '23223', '223', '', 12),
+(9, 'Jarl Balgruuf', 'Whiterun', '0000-00-00', '34', 'Lainnya', 'DI Atas 5 Juta', 'Whiterun', '1', '2', 'Cloud District', 'Whiterun', 'Skyrim Barat', 'Skyrim', '12111212', '12122', 'balgruufthegreat@mail.com', 13),
+(10, 'Master Okada', 'The Dome', '0000-00-00', '30', 'Lainnya', 'DI Atas 5 Juta', 'Jl. Cokroaminoto No.84, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116', '1', '1', 'Sanur', 'Denpasar Selatan', 'Denpasar', 'Bali', '08121122112', '08121122112', 'okada@mail.com', 15),
+(11, 'Gus Eka', 'Edenia', '0000-00-00', '21', 'Guru / Mubaligh', '3 - 5 Juta', 'Pondok Karya, Pondok Aren, Banten', '1', '1', 'Pondok Aren', 'Serang', 'Banten', 'Jawa Barat', '12112', '121212121211', 'ghost_26@gmail.com', 16),
+(12, 'DarmaÂ DwiÂ Darmadi', 'Pontianak', '0000-00-00', '34', 'Pegawai Swasta', '3 - 5 Juta', 'Jl. Tukad Citarum No.44', '1', '1', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '121121212', '121122121', 'darmodi@gmail.com', 17);
 
 --
 -- Indexes for dumped tables
@@ -327,19 +350,19 @@ ALTER TABLE `tbwali`
 -- AUTO_INCREMENT for table `tbabsen`
 --
 ALTER TABLE `tbabsen`
-  MODIFY `IdAbsensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `IdAbsensi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbayah`
 --
 ALTER TABLE `tbayah`
-  MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `IdAyah` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tbibu`
 --
 ALTER TABLE `tbibu`
-  MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `IdIbu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbkelas`
@@ -357,19 +380,19 @@ ALTER TABLE `tbprogram`
 -- AUTO_INCREMENT for table `tbsantri`
 --
 ALTER TABLE `tbsantri`
-  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tbuser`
 --
 ALTER TABLE `tbuser`
-  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbwali`
 --
 ALTER TABLE `tbwali`
-  MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
