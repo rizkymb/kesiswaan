@@ -10,7 +10,7 @@ $dataperempuan = mysqli_fetch_object($queryperempuan);
 ?>
 
 <center>
-    <legend>أهلا وسهلا</legend>
+    <legend>Selamat Datang</legend>
     <br>
 </center>
 <div class="row">
@@ -116,3 +116,4 @@ $dataperempuan = mysqli_fetch_object($queryperempuan);
         </div>
     </div>
 </div>
+
