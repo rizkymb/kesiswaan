@@ -21,7 +21,7 @@ VALUES ('$ID', '$data->IdAyah', '$data->IdIbu', '$data->IdWali', '$absen','$seto
 
 if ($inputquery){
     echo "<script>alert('Absen Berhasil Diinput !');
-    location.href='index.php?m=absen_detail&ID=10';
+    location.href='index.php?m=absen_detail&ID=$ID';
     </script>";
 }else{
     echo "error";

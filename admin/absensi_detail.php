@@ -104,8 +104,7 @@ if ($data->JenisKelamin == '1'){
         <div class="form-group">
             <label class="col-md-4 control-label">Keterangan</label>  
             <div class="col-md-4">
-                <textarea id="keteranganabsen" name="keteranganabsen" placeholder="Masukkan keterangan absensi jika santri tidak hadir" class="form-control">
-        </textarea>
+                <textarea id="keteranganabsen" name="keteranganabsen" placeholder="Masukkan keterangan absensi jika santri tidak hadir" class="form-control"></textarea>
             </div>
         </div>
 
