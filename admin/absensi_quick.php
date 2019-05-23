@@ -18,7 +18,7 @@ $data = mysqli_fetch_object($query);
     }
 }
 </style>
-<input id ="printbtn" type="button" value="Print this page" onclick="window.print();" >
+<input id ="printbtn" class="btn btn-default" type="button" value="Print this page" onclick="window.print();" >
 </div>
 <br>
 <div class="panel panel-primary">

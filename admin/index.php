@@ -53,7 +53,7 @@ if($_SESSION['login']=='' )
                       <li class="dropdown-header">Secondary Action</li>
                       <li><a href="index.php?m=dataabsen">Absensi</a></li>
                       <li><a href="index.php?m=absensi">Detail Absensi</a></li>
-                      <li><a href="#">Data Santri</a></li>
+                      <li><a href="index.php?m=datasantri">Data Santri</a></li>
                       <li><a href="#">Data Kelas</a></li>
                     </ul>
                   </li>
@@ -95,6 +95,8 @@ if($_SESSION['login']=='' )
         include 'dataabsen.php';
       }elseif ($m=='absensi_quick') {
         include 'absensi_quick.php';
+      }elseif ($m=='datasantri') {
+        include 'datasantri.php';
       }else {
         include 'home.php';
       }
