@@ -54,7 +54,7 @@ if($_SESSION['login']=='' )
                       <li><a href="index.php?m=dataabsen">Absensi</a></li>
                       <li><a href="index.php?m=absensi">Detail Absensi</a></li>
                       <li><a href="index.php?m=datasantri">Data Santri</a></li>
-                      <li><a href="#">Data Kelas</a></li>
+                      <li><a href="index.php?m=datakelas">Data Kelas</a></li>
                     </ul>
                   </li>
                 <li><a href="#">Admin Page</a></li>
@@ -99,6 +99,8 @@ if($_SESSION['login']=='' )
         include 'datasantri.php';
       }elseif ($m=='datasantri_detail') {
         include 'datasantri_detail.php';
+      }elseif ($m=='datakelas') {
+        include 'datakelas.php';
       }else {
         include 'home.php';
       }
