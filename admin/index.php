@@ -97,6 +97,8 @@ if($_SESSION['login']=='' )
         include 'absensi_quick.php';
       }elseif ($m=='datasantri') {
         include 'datasantri.php';
+      }elseif ($m=='datasantri_detail') {
+        include 'datasantri_detail.php';
       }else {
         include 'home.php';
       }

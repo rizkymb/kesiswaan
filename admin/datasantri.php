@@ -14,7 +14,7 @@ if ($q!=''){
             <form>
             Data Murid
             <input type="hidden" name="m" value="datasantri">
-            <input type="text" class="form-control" name="q" size="35" placeholder="Cari Data Murid (Masukkan NIS, Nama, dll.)">
+            <input type="text" class="form-control" name="q" size="35" placeholder="Cari Data Murid (Masukkan NIS, Nama, dll.)" value="<?php echo $q?>">
             <button type="submit" class="btn btn-primary">Cari</button>
             </form>
         </div>
@@ -30,15 +30,29 @@ if ($q!=''){
                 </tr>
                 <?php
                 $no = 1;
-                while ($data = mysqli_fetch_object($query)) {?>
-                <tr class="rowHref" data-href="index.php?m=absen_detail&ID=<?php echo $data->IdSantri?>">
+                while ($data = mysqli_fetch_object($query)) {
+                if ($data->IdSantri != ''){
+                ?>
+                <tr class="rowHref" data-href="index.php?m=datasantri_detail&ID=<?php echo $data->IdSantri?>">
                     <td align="center" width="2%"><?php echo $no++."."?></td>
                     <td align="center" width="15%"><?php echo $data->NIS?></td>
                     <td width="70%"><?php echo $data->NamaLengkap?></td>
                     <td width="70%"><?php echo $data->NamaKelas?></td>
                     <td style="text-align: center"><?php echo $data->StatusSantri?></td>
                 </tr>
-                <?php } ?>
+                <?php }else{?>
+                    <tr>
+                        <td><h3>Hasil untuk '<?php echo $q?>' Tidak Ditemukan</h3></td>
+                    </tr>
+                <?php }} ?>
             </table>
         </div>
     </div>
+
+<script>
+jQuery(document).ready(function($) {
+    $(".rowHref").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+</script>
