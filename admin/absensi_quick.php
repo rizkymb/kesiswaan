@@ -52,11 +52,11 @@ $data = mysqli_fetch_object($query);
                 $datacheck = mysqli_fetch_object($checkabsenquery);
                 if ($datacheck->Absen == '1'){
                 ?><span data-toogle="tooltip" data-placement="top" title="Siswa Ini Hadir Hari Ini">✔️</span><?php }elseif($datacheck->NamaLengkap == ""){?><span data-toogle="tooltip" data-placement="top" title="Absen Siswa Ini Belum Diinput">❔</span><?php } else {?><span data-toogle="tooltip" data-placement="top" title="Siswa Ini Tidak Hadir Hari Ini">❌</span><?php }?></td>
-                <td><?php if ($datacheck->NamaLengkap != ""){ echo $datacheck->KeteranganAbsen; } else {echo "-";}?></td>
-                <td><?php if ($datacheck->NamaLengkap != ""){ echo $datacheck->SetorAyat; } else {echo "-";}?></td>
-                <td><?php if ($datacheck->NamaLengkap != ""){ echo $datacheck->Surat; } else {echo "-";}?></td>
-                <td><?php if ($datacheck->NamaLengkap != ""){ echo $datacheck->JuzSaatIni; } else {echo "-";}?></td>
-                <td><?php if ($datacheck->NamaLengkap != ""){ echo $datacheck->TargetJuz; } else {echo "-";}?></td>
+                <td><?php if ($datacheck->NamaLengkap || $datacheck->KeteranganAbsen != ""){ echo $datacheck->KeteranganAbsen; } else {echo "-";}?></td>
+                <td><?php if ($datacheck->NamaLengkap || $datacheck->SetorAyat != ""){ echo $datacheck->SetorAyat; } else {echo "-";}?></td>
+                <td><?php if ($datacheck->NamaLengkap || $datacheck->Surat != ""){ echo $datacheck->Surat; } else {echo "-";}?></td>
+                <td><?php if ($datacheck->NamaLengkap || $datacheck->JuzSaatIni != ""){ echo $datacheck->JuzSaatIni; } else {echo "-";}?></td>
+                <td><?php if ($datacheck->NamaLengkap || $datacheck->TargetJuz != ""){ echo $datacheck->TargetJuz; } else {echo "-";}?></td>
             </tr>
             <?php } ?>
         </table>
