@@ -9,6 +9,18 @@ $data = mysqli_fetch_object($query);
 
 // echo $kelas." & ".$tglabsen;
 ?>
+
+<div class="container">
+<style type="text/css">
+@media print {
+    #printbtn {
+        display :  none;
+    }
+}
+</style>
+<input id ="printbtn" type="button" value="Print this page" onclick="window.print();" >
+</div>
+<br>
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3>Detail Absen Santri</h4>
