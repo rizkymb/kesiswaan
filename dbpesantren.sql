@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2019 at 05:26 AM
+-- Generation Time: May 23, 2019 at 09:36 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -391,7 +391,7 @@ ALTER TABLE `tbprogram`
 -- AUTO_INCREMENT for table `tbsantri`
 --
 ALTER TABLE `tbsantri`
-  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `tbuser`

@@ -1047,7 +1047,7 @@ function nisUpdate() {
   var n = d.getFullYear();
   var select = document.getElementById('pilihkelas');
   var kelas = select.value;
-  document.getElementById("nis").value = n+"-"+("0000" + kelas).slice(-4)+"-<?php echo str_pad($jumlahsantri, 4, '0', STR_PAD_LEFT)?>";
+  document.getElementById("nis").value = n+("0000" + kelas).slice(-4)+"<?php echo str_pad($jumlahsantri, 4, '0', STR_PAD_LEFT)?>";
   // document.getElementById("myBtn").value = "BMW";
 }
 
@@ -1056,7 +1056,7 @@ $(document).ready(function() {
   var n = d.getFullYear();
   var select = document.getElementById('pilihkelas');
   var kelas = select.value;
-  document.getElementById("nis").value = n+"-"+("0000" + kelas).slice(-4)+"-<?php echo str_pad($jumlahsantri, 4, '0', STR_PAD_LEFT)?>";
+  document.getElementById("nis").value = n+("0000" + kelas).slice(-4)+"<?php echo str_pad($jumlahsantri, 4, '0', STR_PAD_LEFT)?>";
   
    });
 
