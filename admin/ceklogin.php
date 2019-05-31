@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 $user=$_POST['user'];
-$pass=$_POST['pass'];
+$pass=hash("md5", $_POST['pass']);
 
 $query=mysqli_query($conn,"SELECT * FROM tbuser where Username='$user' and Password='$pass'");
 $data=mysqli_fetch_object($query);
