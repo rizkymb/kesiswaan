@@ -2,7 +2,7 @@
 include 'config.php';
 if($_SESSION['login']=='' )
       {
-        header("location:../?m=login");
+        header("location:../login.php");
 
       }
       $m = $_GET['m'];
@@ -51,8 +51,8 @@ if($_SESSION['login']=='' )
                       <li><a href="?m=inputkelas">Input Data Kelas</a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Secondary Action</li>
-                      <li><a href="index.php?m=dataabsen">Absensi</a></li>
-                      <li><a href="index.php?m=absensi">Detail Absensi</a></li>
+                      <li><a href="index.php?m=absensi">Absensi</a></li>
+                      <li><a href="index.php?m=dataabsen">Detail Absensi</a></li>
                       <li><a href="index.php?m=datasantri">Data Santri</a></li>
                       <li><a href="index.php?m=datakelas">Data Kelas</a></li>
                     </ul>

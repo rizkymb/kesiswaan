@@ -1,6 +1,11 @@
 <?php 
-include 'admin/config.php';
-$m = $_GET['m'];
+include 'config.php';
+if($_SESSION['login']=='' )
+      {
+        header("location:login.php");
+
+      }
+      $m = $_GET['m'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

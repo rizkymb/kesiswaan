@@ -2,10 +2,10 @@
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 23, 2019 at 09:36 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.10
+-- Host: localhost:3306
+-- Generation Time: May 30, 2019 at 09:37 PM
+-- Server version: 5.6.43
+-- PHP Version: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dbpesantren`
+-- Database: `rizky_kesiswaan`
 --
 
 -- --------------------------------------------------------
@@ -162,7 +162,8 @@ CREATE TABLE `tbkelas` (
 
 INSERT INTO `tbkelas` (`IdKelas`, `NamaKelas`, `TahunKelas`, `KeteranganKelas`) VALUES
 (1, 'A', 2019, 'Kelas Keren'),
-(2, 'B', 2019, 'Kelas Sombong');
+(2, 'B', 2019, 'Kelas Sombong'),
+(3, 'C', 2019, 'Kelas Keren Sejagad');
 
 -- --------------------------------------------------------
 
@@ -230,16 +231,18 @@ CREATE TABLE `tbsantri` (
 --
 
 INSERT INTO `tbsantri` (`IdSantri`, `NIS`, `TglInput`, `Nama`, `NamaLengkap`, `JenisKelamin`, `TempatLahir`, `TglLahir`, `AnakKe`, `Dari`, `Bahasa`, `KebutuhanKhusus`, `SekolahTerakhir`, `NamaSekolah`, `AlamatSekolah`, `TinggalDengan`, `NomorKK`, `NamaJalan`, `RT`, `RW`, `Desa`, `Kecamatan`, `Kabupaten`, `Provinsi`, `StatusSantri`, `IdProgram`, `IdKelas`) VALUES
-(8, '2019-0002-0001', '2019-05-22', 'Herdi', 'I Kayan Herdiana', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', 'Denpasar', 'Aman', 1, 1),
-(9, '2019-0002-0002', '2019-05-22', 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', 'Denpasar', 'Aman', 1, 2),
-(10, '2019-0002-0003', '2019-05-22', 'Suhe', 'I Putu Suherman', 1, 'Singaraja', '2019-05-15', 1, 5, 'Indonesia', 'Indigo', 'Lainnya', 'Universitas Udayana', 'Jl. Pulau Nias No.13, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113', 'Lainnya', '777', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 2, 2),
-(11, '2019-0002-0004', '2019-05-22', 'Awkarin', 'Karin Novilda', 2, 'Jakarta', '2000-01-01', 1, 2, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '121122111111', 'Jl. K.H. Mas Mansyur No.Kav.35', '12', '11', 'Tanahabang', 'Jakarta Pusat', 'Karet Tengsin', 'DKI Jakarta', 'Aman', 3, 1),
-(12, '2019-0002-0005', '2019-05-22', 'Bolo', 'Bolo the Traveler', 1, 'The Dome', '2019-05-03', 1, 1, 'Indonesia', 'Tidak Ada', 'Lainnya', 'Dome Institute of Shadow Research', 'The Dome, Northern Wing of The Dome Number 30', 'Lainnya', '12122112', 'Hidden Compound ', '1', '1', 'Unknown', 'Unknown', 'Unknown', 'Dynasty', 'Aman', 1, 2),
-(13, '2019-0002-0006', '2019-05-22', 'Rizky', 'Rizky Mochtar Buchori', 1, 'Surakarta', '2000-04-10', 3, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Orang Tua', '1212121221', 'Jl. Badak Agung No. 4', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 2),
-(14, '2019-0001-0007', '2019-05-22', 'Diksi', 'I Putu Diksi Erlangga', 1, 'Denpasar', '2000-05-20', 1, 2, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Orang Tua', '1212121221', 'Jl. S Parman Perum BCALand Kediri Blok D No. 41', '1', '1', 'Abian Tuwung', 'Tabanan', 'Kediri', 'Bali', 'Aman', 1, 1),
-(15, '2019-0001-0008', '2019-05-22', 'Husen', 'Muhammad Abdul Husen', 1, 'Malang', '2000-06-06', 2, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK Negeri 1 Denpasar', 'Jl. Cokroaminoto No.84, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116', 'Wali', '1212112', 'Jl Danau Tamblingan 162', '1', '1', 'Sanur', 'Denpassar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 1),
-(16, '2019-0002-0009', '2019-05-22', 'Mega', 'MegaÂ CahyaÂ Kusuma', 2, 'Banyuwangi', '2019-05-16', 1, 3, 'Indonesia', 'Indigo', 'SMA / SMK / MA', 'SMK PGRI 3 Denpasar', 'TARA, Gg. Dewi Uma No.7, Panjer, Kec. Denpasar Sel., Kota Denpasar, Bali 80235', 'Wali', '1212121221', 'Pondok Karya, Pondok Aren, Banten', '1', '1', 'Pondok karya', 'Banten', 'Serang', 'Jawa Barat', 'Aman', 1, 2),
-(17, '2019-0001-0010', '2019-05-22', 'Fanny', 'CahayaÂ FannyÂ Darmadi', 2, 'Pontianak', '2008-02-05', 3, 4, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Wali', '122121212', 'Jl. Tukad Citarum No.44', '1', '1', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 1);
+(8, '201900020001', '2019-05-22', 'Muhammad', 'Muhammad Hedri Firhaullah', 1, 'Singaraja', '2019-05-17', 1, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Lainnya', '1212121221', 'Jl. Sudirman', '1', '1', 'Gak Tau', 'Denpasar', 'Denpasar Selatan', 'Denpasar', 'Aman', 1, 1),
+(9, '201900020002', '2019-05-22', 'Agys', 'Agystha Wahyu Handika', 1, 'Banyuwangi', '2019-05-17', 1, 3, 'Sunda', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '212', 'Dalung, Bali, Denpasar', '1', '1', 'Dalung', 'Badung', 'Badung', 'Denpasar', 'Aman', 1, 2),
+(10, '201900020003', '2019-05-22', 'Nanda', 'Nanda Wijaya', 1, 'Singaraja', '2019-05-15', 1, 5, 'Indonesia', 'Indigo', 'Lainnya', 'Universitas Udayana', 'Jl. Pulau Nias No.13, Dauh Puri Klod, Kec. Denpasar Bar., Kota Denpasar, Bali 80113', 'Lainnya', '777', 'Jl. Wearnes No. 12', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 2, 2),
+(11, '201900020004', '2019-05-22', 'Awkarin', 'Karin Novilda', 2, 'Jakarta', '2000-01-01', 1, 2, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum', 'Orang Tua', '121122111111', 'Jl. K.H. Mas Mansyur No.Kav.35', '12', '11', 'Tanahabang', 'Jakarta Pusat', 'Karet Tengsin', 'DKI Jakarta', 'Aman', 3, 1),
+(12, '201900020005', '2019-05-22', 'Bolo', 'Bolo the Traveler', 1, 'The Dome', '2019-05-03', 1, 1, 'Indonesia', 'Tidak Ada', 'Lainnya', 'Dome Institute of Shadow Research', 'The Dome, Northern Wing of The Dome Number 30', 'Lainnya', '12122112', 'Hidden Compound ', '1', '1', 'Unknown', 'Unknown', 'Unknown', 'Dynasty', 'Aman', 1, 2),
+(13, '201900020006', '2019-05-22', 'Rizky', 'Rizky Mochtar Buchori', 1, 'Surakarta', '2000-04-10', 3, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Orang Tua', '1212121221', 'Jl. Badak Agung No. 4', '1', '2', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 2),
+(14, '201900010007', '2019-05-22', 'Diksi', 'I Putu Diksi Erlangga', 1, 'Denpasar', '2000-05-20', 1, 2, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Orang Tua', '1212121221', 'Jl. S Parman Perum BCALand Kediri Blok D No. 41', '1', '1', 'Abian Tuwung', 'Tabanan', 'Kediri', 'Bali', 'Aman', 1, 1),
+(15, '201900010008', '2019-05-22', 'Husen', 'Muhammad Abdul Husen', 1, 'Malang', '2000-06-06', 2, 3, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK Negeri 1 Denpasar', 'Jl. Cokroaminoto No.84, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116', 'Wali', '1212112', 'Jl Danau Tamblingan 162', '1', '1', 'Sanur', 'Denpassar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 1),
+(16, '201900020009', '2019-05-22', 'Mega', 'MegaÂ CahyaÂ Kusuma', 2, 'Banyuwangi', '2019-05-16', 1, 3, 'Indonesia', 'Indigo', 'SMA / SMK / MA', 'SMK PGRI 3 Denpasar', 'TARA, Gg. Dewi Uma No.7, Panjer, Kec. Denpasar Sel., Kota Denpasar, Bali 80235', 'Wali', '1212121221', 'Pondok Karya, Pondok Aren, Banten', '1', '1', 'Pondok karya', 'Banten', 'Serang', 'Jawa Barat', 'Aman', 1, 2),
+(17, '201900010010', '2019-05-22', 'Fanny', 'CahayaÂ FannyÂ Darmadi', 2, 'Pontianak', '2008-02-05', 3, 4, 'Indonesia', 'Tidak Ada', 'SMA / SMK / MA', 'SMK TI Bali  Global', 'Jl. Tukad Citarum No.44', 'Wali', '122121212', 'Jl. Tukad Citarum No.44', '1', '1', 'Panjer', 'Denpasar', 'Denpasar Selatan', 'Bali', 'Aman', 1, 1),
+(101, '201900010011', '2019-05-23', 'Mujaer', 'I Gusti Made Murjana', 1, 'Denpasar', '2019-05-22', 3, 4, 'Indonesia', 'Autis', 'SMA / SMK / MA', 'SMK TI Bali Global Denpasar', 'Jl, Tukad Citarum No. 44', 'Orang Tua', '121211212', 'Jl Ambrosial No 24', '1', '1', 'Sanur', 'Denpasar', 'Danpasar Selatan', 'Bali', 'Aman', 2, 1),
+(102, '201900030012', '2019-05-23', 'Nita', 'Nita Cahyadi', 2, 'Denpasar', '2019-05-01', 1, 2, 'Indonesia', 'Indigo', 'SMA / SMK / MA', 'SMK TI BALI Global', 'JL tukad citarum 44', 'Wali', '11444', 'JL JALAN 24', '1', '2', 'WONOSOBO', 'BONDOWOSO', 'NGAWI', 'JAWA TIMUR', 'Aman', 2, 3);
 
 -- --------------------------------------------------------
 
@@ -299,7 +302,9 @@ INSERT INTO `tbwali` (`IdWali`, `NamaLengkapWali`, `TempatLahirWali`, `TanggalLa
 (9, 'Jarl Balgruuf', 'Whiterun', '0000-00-00', '34', 'Lainnya', 'DI Atas 5 Juta', 'Whiterun', '1', '2', 'Cloud District', 'Whiterun', 'Skyrim Barat', 'Skyrim', '12111212', '12122', 'balgruufthegreat@mail.com', 13),
 (10, 'Master Okada', 'The Dome', '0000-00-00', '30', 'Lainnya', 'DI Atas 5 Juta', 'Jl. Cokroaminoto No.84, Pemecutan Kaja, Kec. Denpasar Utara, Kota Denpasar, Bali 80116', '1', '1', 'Sanur', 'Denpasar Selatan', 'Denpasar', 'Bali', '08121122112', '08121122112', 'okada@mail.com', 15),
 (11, 'Gus Eka', 'Edenia', '0000-00-00', '21', 'Guru / Mubaligh', '3 - 5 Juta', 'Pondok Karya, Pondok Aren, Banten', '1', '1', 'Pondok Aren', 'Serang', 'Banten', 'Jawa Barat', '12112', '121212121211', 'ghost_26@gmail.com', 16),
-(12, 'DarmaÂ DwiÂ Darmadi', 'Pontianak', '0000-00-00', '34', 'Pegawai Swasta', '3 - 5 Juta', 'Jl. Tukad Citarum No.44', '1', '1', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '121121212', '121122121', 'darmodi@gmail.com', 17);
+(12, 'DarmaÂ DwiÂ Darmadi', 'Pontianak', '0000-00-00', '34', 'Pegawai Swasta', '3 - 5 Juta', 'Jl. Tukad Citarum No.44', '1', '1', 'Panjer', 'Denpasar Selatan', 'Denpasar', 'Bali', '121121212', '121122121', 'darmodi@gmail.com', 17),
+(13, 'I Nengah Lengar', 'Netherrealm', '0000-00-00', '99', 'Lainnya', '1 - 3 Juta', 'Jl. Black No 44', '1', '1', 'Sanur', 'Densel', 'Denpasarr', 'Bali', '221', '666', 'lgr@mail.com', 101),
+(14, 'Eko Mulyono', 'Nganjuk', '0000-00-00', '160', 'PNS / TNI / Polri', '3 - 5 Juta', 'jl jalan', '1', '1', 'NGANJUK', 'NGANJUK', 'JAWA TIMUR', 'JAWA TIMUR', '01', '02', 'HHHAHAH', 102);
 
 --
 -- Indexes for dumped tables
@@ -379,7 +384,7 @@ ALTER TABLE `tbibu`
 -- AUTO_INCREMENT for table `tbkelas`
 --
 ALTER TABLE `tbkelas`
-  MODIFY `IdKelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `IdKelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbprogram`
@@ -391,7 +396,7 @@ ALTER TABLE `tbprogram`
 -- AUTO_INCREMENT for table `tbsantri`
 --
 ALTER TABLE `tbsantri`
-  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `IdSantri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 
 --
 -- AUTO_INCREMENT for table `tbuser`
@@ -403,7 +408,7 @@ ALTER TABLE `tbuser`
 -- AUTO_INCREMENT for table `tbwali`
 --
 ALTER TABLE `tbwali`
-  MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `IdWali` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

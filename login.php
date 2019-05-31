@@ -35,7 +35,7 @@
                                     </div>
                                     <button type="submit" class="btn btn-lg btn-success btn-block">Submit</button>
                                     <br>
-                                    <a href="index.php" style="text-decoration: none;color:tomato;"><span class="glyphicon glyphicon-arrow-left"></span> Go Back</a>
+                                    &copy; Molor Systems
                                 </fieldset>
                             </form>
                         </div>
