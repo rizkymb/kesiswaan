@@ -34,9 +34,9 @@ $q = mysqli_real_escape_string($conn, $_GET['q']);
                 <tr class="rowHref" data-href="index.php?m=datakelas_detail&ID=<?php echo $data->IdKelas?>">
                     <td align="center" width="2%"><?php echo $no++."."?></td>
                     <td align="center" width="15%"><?php echo str_pad($data->IdKelas, 4, '0', STR_PAD_LEFT)?></td>
-                    <td width="70%"><?php echo $data->NamaKelas?></td>
-                    <td width="70%"></td>
-                    <td style="text-align: center"><?php echo $data->KeteranganKelas?></td>
+                    <td width="10%"><?php echo $data->NamaKelas?></td>
+                    <td width="30%"></td>
+                    <td  width="70%" style="text-align: center"><?php echo $data->KeteranganKelas?></td>
                 </tr>
                 <?php }else{?>
                     <tr>

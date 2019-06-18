@@ -20,7 +20,9 @@ if ($query){
     </script>";
 }
 else {
-    echo $sql;
+    echo "<script>
+    alert('Terjadi Kesalahan, Silahkan Ulangi Lagi');
+    </script>";
 }
 
 ?>

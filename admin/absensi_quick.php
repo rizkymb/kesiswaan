@@ -34,7 +34,7 @@ $data = mysqli_fetch_object($query);
                 <th align="center" style="text-align: center">Nama Santri </th>
                 <th align="center" style="text-align: center">JK</th>
                 <th align="center" style="text-align: center">Status Santri</th>
-                <th align="center" style="text-align: center">Kehadiran</th>
+                <th align="center" style="text-align: center">Absen</th>
                 <th align="center" style="text-align: center">Keterangan</th>
                 <th align="center" style="text-align: center">Ayat Disetor</th>
                 <th align="center" style="text-align: center">Surat</th>
